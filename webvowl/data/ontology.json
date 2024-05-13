@@ -1,0 +1,2576 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "https://qudt.org/schema/qudt", "http://www.w3.org/2002/07/owl", "http://www.w3.org/ns/org", "http://www.w3.org/2000/01/rdf-schema", "https://www.blinded-for-review/rso", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "An Ontology towards Digital Sustainability Reporting"
+    },
+    "iri" : "https://www.blinded-for-review/rso",
+    "version" : "0.1.0",
+    "author" : [ "Blinded for review" ],
+    "description" : {
+      "en" : "The ontology defines the representation of environmental indicators in sustainability reporting standards GRI and ESRS."
+    },
+    "labels" : {
+      "en" : "The Sustainability Reporting Standard Ontology"
+    },
+    "comments" : {
+      "en" : "RSO is designed for mapping quantitative environmental indicators from the two significant sustainability reporting standards, GRI and ESRS. It formally represents (1) the classification and provenance information of indicators in the GRI and ESRS standards; (2) the requirements for indicators. RSO is envisioned to be integrated into the SME digital infrastructure. Accompanied by suitable digital infrastructure, the reporting system leveraging RSO as a knowledge base will empower the daily tasks of sustainability managers."
+    },
+    "other" : {
+      "versionIRI" : [ {
+        "identifier" : "versionIRI",
+        "language" : "undefined",
+        "value" : "https://www.blinded-for-review/rso/0.1.0",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Blinded for review",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Blinded for review",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-12-01",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "rso",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "Blinded for review",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://www.blinded-for-review/rso#",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "Sustainability reporting by Small and Medium Enterprises (SMEs) is gaining importance. SMEs form the backbone of European industries, and their customers rely on them to ensure regulatory compliance. In preparing sustainability reports, a combination of standards is commonly used, which encompasses overlapping yet distinct requirements on sustainability indicators. Different standards categorize shared indicators under varying topics, while they also mandate unique indicators to assess identical sustainability phenomena. This poses challenges for SMEs in reporting against multiple standards. Considerable human efforts are demanded to determine the interconnected requirements across different standards. Additionally, reporting on overlapping indicators for new standards results in significant redundant work. Mapping of indicators between different standards allows the semantic interoperability of standards by indicating matching and distinct requirements, aiding in addressing these challenges. The purpose of RSO is to facilitate the interoperability of sustainability standards by indicating the matching and distinct indicators. Indicator mapping will provide further information such as: which report data can be reused for another standard, what distinct requirements exist for the overlapping indicators in two standards, and which distinct indicators are required for the same topic/subtopic by different standards.",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "An Ontology towards Digital Sustainability Reporting",
+        "type" : "label"
+      } ],
+      "url" : [ {
+        "identifier" : "url",
+        "language" : "undefined",
+        "value" : "https://www.blinded-for-review/rso",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://www.blinded-for-review/rso#GRIGovernanceTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Governance Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIGovernanceTopic",
+      "en" : "GRI Governance Topic"
+    },
+    "comment" : {
+      "undefined" : "GRI topics derived from the GRI standards describing the governance dimension."
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSTopicalStandard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Topical Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSTopicalStandard",
+      "en" : "ESRS Topical Standard"
+    },
+    "comment" : {
+      "en" : "ESRS topical standards provide detailed disclosure requirements across environmental (E), social (S), and governance (G) topics. Environmental (E) topic focus on aspects related to environmental impact, such as climate change, biodiversity, and resource use. Social (S) standards address social matters, including human rights, labor practices, and community engagement.Governance (G) standards pertain to governance practices, board structures, and transparency."
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Report",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Report",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Report",
+      "en" : "Sustainability Report"
+    },
+    "comment" : {
+      "en" : "Represents the annual sustainability report published by a certain organization and complies with certain standards."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Material",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Material",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Material",
+      "en" : "Material"
+    },
+    "comment" : {
+      "en" : "A variable that quantifies material usage."
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#SocialIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Social indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SocialIndicator",
+      "en" : "Social indicator"
+    },
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Indicators measure the social dimension of sustainability."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSEnvironmentTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Environment Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSEnvironmentTopic",
+      "en" : "ESRS Environment Topic"
+    },
+    "comment" : {
+      "undefined" : "ESRS topics derived from the ESRS standards describing the environmental dimension."
+    },
+    "id" : "35",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#AbsoluteIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Absolute Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AbsoluteIndicator",
+      "en" : "Absolute Indicator"
+    },
+    "comment" : {
+      "en" : "Absolute indicator represents the total quantity of a phenomenon."
+    },
+    "id" : "37",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#CoreEnvironmentTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Core Environment Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoreEnvironmentTopic",
+      "en" : "Core Environment Topic"
+    },
+    "comment" : {
+      "en" : "Individuals of CoreEnvironmentalTopic derive from the GRI standards and represent specific environmental issues. This classification aids in organizing and addressing distinct environmental aspects through targeted indicators."
+    },
+    "id" : "45",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#GRITopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRITopic",
+      "en" : "GRI Topic"
+    },
+    "subClasses" : [ "3", "34", "30" ],
+    "comment" : {
+      "en" : "GRI topics derived from the GRI standards."
+    },
+    "id" : "4",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#MaterialIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Material Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MaterialIndicator",
+      "en" : "Material Indicator"
+    },
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Indicators measure the material topic."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "17",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSStandard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSStandard",
+      "en" : "ESRS Standard"
+    },
+    "subClasses" : [ "5", "20" ],
+    "comment" : {
+      "en" : "The European Sustainability Reporting Standards (ESRS) establish a comprehensive framework for sustainability reporting by companies operating within the European Union. These guidelines detail specific reporting requirements, encompassing both broad principles and detailed disclosure obligations."
+    },
+    "id" : "6",
+    "superClasses" : [ "53" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "32", "24" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#WasteIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Waste Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WasteIndicator",
+      "en" : "Waste Indicator"
+    },
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Indicators measure the waste topic."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "55"
+  }, {
+    "instances" : 0,
+    "union" : [ "32", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESGDimension",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESG Dimension",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESGDimension",
+      "en" : "ESG Dimension"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.blinded-for-review/rso#Social",
+      "baseIri" : "https://www.blinded-for-review/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Social (S)",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Under the Social dimension, companies report on how they manage their employee development and labour practices."
+      },
+      "labels" : {
+        "IRI-based" : "Social",
+        "en" : "Social (S)"
+      }
+    }, {
+      "iri" : "https://www.blinded-for-review/rso#Governance",
+      "baseIri" : "https://www.blinded-for-review/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "Coporate Governance (G)",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "The main issues reported under the Governance Pillar are shareholders rights, board diversity, how executives are compensated and how their compensation is aligned with the company’s sustainability performance. It also includes matters of corporate behaviour such as anti-competitive practices and corruption."
+      },
+      "labels" : {
+        "IRI-based" : "Governance",
+        "en" : "Coporate Governance (G)"
+      }
+    }, {
+      "iri" : "https://www.blinded-for-review/rso#Environment",
+      "baseIri" : "https://www.blinded-for-review/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Environmental (E)",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Emissions such as greenhouse gases and air, water and ground pollution emissions falls under the Environmental dimension of sustainability."
+      },
+      "labels" : {
+        "IRI-based" : "Environment",
+        "en" : "Environmental (E)"
+      }
+    } ],
+    "comment" : {
+      "en" : "Covers the three dimensions of sustainability and is defined as enumerated class."
+    },
+    "id" : "57"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#GRIDisclosure",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.globalreporting.org/pdf.ashx?id=12334",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Disclosure",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIDisclosure",
+      "en" : "GRI Disclosure"
+    },
+    "comment" : {
+      "en" : "The GRI Standards contain disclosures that allow an organization to report information about its impacts consistently and\ncredibly."
+    },
+    "id" : "13",
+    "superClasses" : [ "11" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "32", "47", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "58"
+  }, {
+    "instances" : 0,
+    "union" : [ "32", "47", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#EnergyIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Energy Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnergyIndicator",
+      "en" : "Energy Indicator"
+    },
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Indicators that measure the energy topic."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#GRISocialTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Social Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRISocialTopic",
+      "en" : "GRI Social Topic"
+    },
+    "comment" : {
+      "undefined" : "GRI topics derived from the GRI standards describing the social dimension."
+    },
+    "id" : "30",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#StandardSet",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Standard Set",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StandardSet",
+      "en" : "Standard Set"
+    },
+    "comment" : {
+      "en" : "Models a series of sustainability reporting standards."
+    },
+    "id" : "69"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#GRIEnvironmentTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Environment Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIEnvironmentTopic",
+      "en" : "GRI Environment Topic"
+    },
+    "comment" : {
+      "undefined" : "GRI topics derived from the GRI standards describing the environmental dimension."
+    },
+    "id" : "34",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Value",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Value",
+      "en" : "Value"
+    },
+    "subClasses" : [ "26", "23" ],
+    "comment" : {
+      "en" : "This class acts as a collective framework for organizing quantitative data within sustainability reports. It encompasses two subclasses:(1) ReportValue, which structures individual data entries including numerical values and units linked to specific indicators, and (2) BreakdownValue, which allows for detailed disaggregation of data according to defined criteria, enhancing data analysis and reporting precision."
+    },
+    "id" : "24"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#CoreGovernanceTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Core Governance Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoreGovernanceTopic",
+      "en" : "Core Governance Topic"
+    },
+    "comment" : {
+      "en" : "Individuals of CoreGovernanceTopic are based on the GRI standards and represent unique governance concerns. These topics facilitate the categorization of governance-related indicators, promoting transparency and accountability in corporate governance practices."
+    },
+    "id" : "71",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#EnvironmentalIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Environmental Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnvironmentalIndicator",
+      "en" : "Environmental Indicator"
+    },
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Indicators that measure the environmen dimension of sustainability."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#BreakDownValue",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Break Down Value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BreakDownValue",
+      "en" : "Break Down Value"
+    },
+    "comment" : {
+      "en" : "Breakdown values are crafted to meet the standards' requirements, allowing organizations to dissect a total report value based on specific criteria. \nThese breakdown values are linked to specific report values."
+    },
+    "id" : "26",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#GRIIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIIndicator",
+      "en" : "GRI Indicator"
+    },
+    "comment" : {
+      "en" : "GRI indicators are part of the Global Reporting Initiative (GRI) Standards, which are widely used for sustainability reporting globally."
+    },
+    "id" : "83"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Disclosure",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Disclosure",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Disclosure",
+      "en" : "Disclosure"
+    },
+    "subClasses" : [ "13", "10" ],
+    "comment" : {
+      "en" : "Covers indicators that allow an organization to report information about sustainability issues. This class is further subdivided into GRIDisclosure and ESRSDisclosureRequirement based on terms used in each standard respectively."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/QuantityKind",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QuantityKind"
+    },
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSIndicator",
+      "en" : "ESRS Indicator"
+    },
+    "comment" : {
+      "en" : "ESRS indicator is a specific measurement or metric defined under the European Sustainability Reporting Standards (ESRS)."
+    },
+    "id" : "68"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#PercentageIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Percentage Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PercentageIndicator",
+      "en" : "Percentage Indicator"
+    },
+    "comment" : {
+      "en" : "A percentage indicator shares the same quantity kind on both numerator and denominator."
+    },
+    "id" : "87",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#GRIStandard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIStandard",
+      "en" : "GRI Standard"
+    },
+    "subClasses" : [ "1", "63" ],
+    "comment" : {
+      "en" : "A GRI standard is a piece of the GRI Sustainability Reporting Standards (GRI Standards). For example, GRI 301: Materials 2016."
+    },
+    "id" : "2",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Waste",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Waste",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Waste",
+      "en" : "Waste"
+    },
+    "comment" : {
+      "en" : "A variable that quantifies waste metrics."
+    },
+    "id" : "93",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#EnergyVariable",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Energy",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnergyVariable",
+      "en" : "Energy"
+    },
+    "comment" : {
+      "en" : "A variable that quantifies energy metrics."
+    },
+    "id" : "96",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Applicability",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Indicator Requirement Applicability",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Applicability",
+      "en" : "Indicator Requirement Applicability"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.blinded-for-review/rso#enumerated",
+      "baseIri" : "https://www.blinded-for-review/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "enumerated",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "An enumerated requirement is described as \"the organization shall report on the information of A or B of a phenomenon\".\nFor example, \"the reporting organization shall report the following information: total weight or volume of materials that are used to produce .....\", refering to GRI 301-1."
+      },
+      "labels" : {
+        "IRI-based" : "enumerated",
+        "en" : "enumerated"
+      }
+    }, {
+      "iri" : "https://www.blinded-for-review/rso#optional",
+      "baseIri" : "https://www.blinded-for-review/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "optional",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "An optional requirement for an indicator is indicated by the expression \"if applicable\" in the requirement description."
+      },
+      "labels" : {
+        "IRI-based" : "optional",
+        "en" : "optional"
+      }
+    }, {
+      "iri" : "https://www.blinded-for-review/rso#mandatory",
+      "baseIri" : "https://www.blinded-for-review/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "mandatory",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "A mandatory requirement for an indicator is indicated by the word \"shall\" in the requirement description."
+      },
+      "labels" : {
+        "IRI-based" : "mandatory",
+        "en" : "mandatory"
+      }
+    } ],
+    "comment" : {
+      "en" : "Indicates whether an indicator is required mandatorily or optionally by the corresponding standard."
+    },
+    "id" : "109"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#GRITopicStandard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Topic Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRITopicStandard",
+      "en" : "GRI Topic Standard"
+    },
+    "comment" : {
+      "en" : "The Topic Standards contain disclosures that the organization uses to report information about its impacts in relation to particular topics. The organization uses the Topic Standards according to the list of material topics it has determined using GRI 3."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/org#Organization",
+    "baseIri" : "http://www.w3.org/ns/org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Emission",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Emission",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Emission",
+      "en" : "Emission"
+    },
+    "comment" : {
+      "en" : "A variable that quantifies emissions."
+    },
+    "id" : "98",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSSocialTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Social Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSSocialTopic",
+      "en" : "ESRS Social Topic"
+    },
+    "comment" : {
+      "undefined" : "ESRS topics derived from the ESRS standards describing the social dimension."
+    },
+    "id" : "103",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#EmissionIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Emission Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EmissionIndicator",
+      "en" : "Emission Indicator"
+    },
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Indicators measure the emission topic."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#CoreSocialTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Core Social Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoreSocialTopic",
+      "en" : "Core Social Topic"
+    },
+    "comment" : {
+      "en" : "Individuals of CoreSocialTopic are sourced from the GRI standards and encompass specific social issues. This categorization helps in the systematic reporting and evaluation of social topics, focusing on areas such as labor practices, human rights, and community engagement."
+    },
+    "id" : "73",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSTopic",
+      "en" : "ESRS Topic"
+    },
+    "subClasses" : [ "35", "105", "103" ],
+    "comment" : {
+      "en" : "ESRS topics derived from the ESRS standards."
+    },
+    "id" : "36",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSUniversalStandard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Universal Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSUniversalStandard",
+      "en" : "ESRS Universal Standard"
+    },
+    "comment" : {
+      "en" : "ESRS universal standards provide general reporting concepts and overarching disclosure requirements that apply across all undertakings, regardless of the sector they operate in."
+    },
+    "id" : "20",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ReportValue",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Report Value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ReportValue",
+      "en" : "Sustaianbility Report Value"
+    },
+    "comment" : {
+      "en" : "Provides a structure to represent a single report data. Each data contains a numerical value and a measurement unit and is linked to a specific indicator."
+    },
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Variable",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Variable",
+      "en" : "Sustainability Variable"
+    },
+    "subClasses" : [ "96", "93", "14", "98" ],
+    "comment" : {
+      "en" : "A variable encompasses a hierarchy of subtopics within specific sustainability areas. It represents a measurable value of a phenomenon, like 'total energy consumption'."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSGovernanceTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Governance Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSGovernanceTopic",
+      "en" : "ESRS Governance Topic"
+    },
+    "comment" : {
+      "undefined" : "ESRS topics derived from the ESRS standards describing the governance dimension."
+    },
+    "id" : "105",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Standard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Standard",
+      "en" : "Sustainability Standard"
+    },
+    "subClasses" : [ "2", "6" ],
+    "comment" : {
+      "en" : "A sustainability reporting standard is a piece of standard that is defined by a specific standard setter. For example, the standard GRI 301: Materials 2016 is part of the GRI Sustainability Reporting Standards (GRI Standards).\nThis class is defined as the super class for subclasses."
+    },
+    "id" : "53"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#GRIUniversalStandard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Universal Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIUniversalStandard",
+      "en" : "GRI Universal Standard"
+    },
+    "comment" : {
+      "en" : "The Universal Standards defined in GRI standards are: GRI 1, GRI 2 and GRI 3\nGRI 1: Foundation 2021 specifies the requirements that the organization must comply with to report in accordance with the GRI Standards. The organization begins using the GRI Standards by consulting GRI 1.\nGRI 2: General Disclosures 2021 contains disclosures that the organization uses to provide information about its reporting practices and other organizational details, such as its activities, governance, and policies.\nGRI 3: Material Topics 2021 provides guidance on how to determine material topics. It also contains disclosures that the organization uses to report information about its process of determining material topics, its list of material topics, and how it manages each topic."
+    },
+    "id" : "63",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSDisclosureRequirement",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.efrag.org/Assets/Download?assetUrl=%2Fsites%2Fwebpublishing%2FSiteAssets%2F06%2520Draft%2520ESRS%25201%2520General%2520requirements%2520November%25202022.pdf",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Disclosure Requirement",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS structure the information to be disclosed under Disclosure Requirements.\nDisclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSDisclosureRequirement",
+      "en" : "ESRS Disclosure Requirement"
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#WeightedIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Weighted Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WeightedIndicator",
+      "en" : "Weighted Indicator"
+    },
+    "subClasses" : [ "87", "40" ],
+    "comment" : {
+      "en" : "Weighted indicator considers additional factors through weighting."
+    },
+    "id" : "79",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Indicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Indicator",
+      "en" : "Sustainability Indicator"
+    },
+    "subClasses" : [ "37", "79" ],
+    "comment" : {
+      "en" : "A single measure from which conclusions on the phenomenon of interest can be inferred."
+    },
+    "id" : "32"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#CorporateGovernanceIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Corporate governance indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CorporateGovernanceIndicator",
+      "en" : "Corporate governance indicator"
+    },
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Indicators measure the corporate governance dimension of sustainability."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#CoreTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Core Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoreTopic",
+      "en" : "Core Topic"
+    },
+    "subClasses" : [ "45", "73", "71" ],
+    "comment" : {
+      "en" : "Individuals of CoreTopic are borrowed from the GRI standards which represents a singular environmental issue, facilitating indicator classification."
+    },
+    "id" : "46",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#IntensityIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Intensity Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IntensityIndicator",
+      "en" : "Intensity Indicator"
+    },
+    "comment" : {
+      "undefined" : "An intensity indicator has different quantity kinds and units on numerator and denominator."
+    },
+    "id" : "40",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Topic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Topic",
+      "en" : "Sustainability Topic"
+    },
+    "subClasses" : [ "36", "4", "46" ],
+    "comment" : {
+      "en" : "delineates sustainability issues."
+    },
+    "id" : "47"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "17",
+    "subproperty" : [ "18" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "6",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "24",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "4",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "4",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#reportsOnIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "32",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "reports on indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reportsOnIndicator",
+      "en" : "reports on indicator"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "This property associates a reported value with the particular indicator derived from the standards, which the value represents."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasDenominatorQuantityKind",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "41",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Denominator Quantity Kind",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDenominatorQuantityKind",
+      "en" : "has Denominator Quantity Kind"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "40",
+    "comment" : {
+      "en" : "This property relates the intensity indicator with the required quantity kind of the denominator derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasYear",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "44",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Year",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasYear",
+      "en" : "has Year"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "This property links the sustainability report to its publication year."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasBreakDownValue",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "26",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has break down value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBreakDownValue",
+      "en" : "has break down value"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "This property links a report value with several break down values."
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#measuresCoreTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "46",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures Core topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresCoreTopic",
+      "en" : "measures Core topic"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "32",
+    "comment" : {
+      "en" : "This property relates the indicator with certain Core Topic that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#inStandard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "53",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "in sustainability standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inStandard",
+      "en" : "in sustainability standard"
+    },
+    "domain" : "59",
+    "comment" : {
+      "en" : "This property relates an indicator, a topic,  or a disclosure / disclosure requirement with the specific piece of either GRI standard or ESRS standard that defines this indicator or this disclosure."
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "range" : "30",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "63",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "30",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#measuresESRSTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "36",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures ESRS Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresESRSTopic",
+      "en" : "measures ESRS Topic"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "68",
+    "comment" : {
+      "en" : "This property relates the indicator with certain ESRS Topic that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "range" : "46",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "46",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "47",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "47",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "32",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "79",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "32",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#inDisclosure",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "13",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "in GRI Disclosure",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inDisclosure",
+      "en" : "in GRI Disclosure"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "This property relates a GRI indicator with the corresponding disclosure that defines this indicator in the GRI standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasDenominatorVariable",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "15",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Denominator Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDenominatorVariable",
+      "en" : "has Denominator Variable"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "79",
+    "comment" : {
+      "en" : "This property relates the weighted indicator with the measurement variable (object) of the denominator derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "range" : "79",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "53",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#measuresTopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "47",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures sustainability topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresTopic",
+      "en" : "measures sustainability topic"
+    },
+    "domain" : "32",
+    "subproperty" : [ "51", "67", "89" ],
+    "comment" : {
+      "en" : "This property relates the indicator with specific sustainability topic that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "range" : "53",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "91"
+  }, {
+    "range" : "15",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasReportValue",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "23",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has report value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasReportValue",
+      "en" : "has report value"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "This property links the sustainability report with the report value."
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "range" : "15",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "15",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "2",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "36",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "36",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#publish",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "8",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "publish",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publish",
+      "en" : "publish"
+    },
+    "domain" : "107",
+    "comment" : {
+      "en" : "This property links an organization to the sustainability reports published by it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasNumericalValue",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "50",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Numerical Value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumericalValue",
+      "en" : "has Numerical Value"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "This property relates the indicator value with its specific numerical value."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasCalculationVariable",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "15",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Calculation Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCalculationVariable",
+      "en" : "has Calculation Variable"
+    },
+    "domain" : "37",
+    "subproperty" : [ "111", "112" ],
+    "comment" : {
+      "en" : "This property relates the indicator to the required variables for calculating its value, as defined by mathematical functions in the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#isDefinedBy",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "69",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is Defined By",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isDefinedBy",
+      "en" : "is Defined By"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "This property relates an indicator or a piece of standard with the specific standard set (either GRI or ESRS) that defines it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasMeasurementVariable",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "15",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Measurement Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasurementVariable",
+      "en" : "has Measurement Variable"
+    },
+    "domain" : "32",
+    "subproperty" : [ "84", "114" ],
+    "comment" : {
+      "en" : "This property relates the indicator with the measurement variable (object) derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#measuresDimension",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "57",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures ESG dimension",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresDimension",
+      "en" : "measures ESG dimension"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "This property relates the indicator with the ESG dimension (either Environmental, Social, or corporate Goverment) that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasSiblingIndicator",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "32",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Sibling Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSiblingIndicator",
+      "en" : "has Sibling Indicator"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "32",
+    "comment" : {
+      "en" : "This property relates the indicators defined by the same standard setter with the same measurement variable but different quantity kind. This property is defined as a symmetric property."
+    },
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasNumeratorQuantityKind",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "41",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Numerator Quantity Kind",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumeratorQuantityKind",
+      "en" : "has Numerator Quantity Kind"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "40",
+    "comment" : {
+      "en" : "This property relates the intensity indicator with the required quantity kind of the numerator derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "117"
+  }, {
+    "range" : "73",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "73",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "105",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "103",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/hasQuantityKind",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "41",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Quantity Kind",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasQuantityKind",
+      "en" : "has Quantity Kind"
+    },
+    "domain" : "56",
+    "subproperty" : [ "39", "117" ],
+    "comment" : {
+      "en" : "This property relates the indicator with the required quantity kind derived from the sustainability standards."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "103",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "83",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "20",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#inDisclosureRequirement",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "10",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "in ESRS disclosure requirement",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inDisclosureRequirement",
+      "en" : "in ESRS disclosure requirement"
+    },
+    "domain" : "68",
+    "comment" : {
+      "en" : "User\nThis property relates an ESRS indicator with the corresponding ESRS Disclosure Requirement from where this indicator was derived."
+    },
+    "attributes" : [ "object" ],
+    "id" : "125"
+  }, {
+    "range" : "3",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "79",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "71",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "iri" : "https://qudt.org/schema/qudt/hasUnit",
+    "baseIri" : "https://qudt.org/schema/qudt",
+    "range" : "7",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Unit",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "has Unit"
+    },
+    "domain" : "54",
+    "comment" : {
+      "en" : "This property relates the indicator with the required unit derived from the sustainability standards."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasPositiveVariable",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "15",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Positive Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPositiveVariable",
+      "en" : "has Positive Variable"
+    },
+    "superproperty" : [ "110" ],
+    "domain" : "37",
+    "comment" : {
+      "en" : "This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is plus."
+    },
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasNegativeVariable",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "15",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Negative Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNegativeVariable",
+      "en" : "has Negative Variable"
+    },
+    "superproperty" : [ "110" ],
+    "domain" : "37",
+    "comment" : {
+      "en" : "This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is minus."
+    },
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasApplicability",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "109",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has applicability",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasApplicability",
+      "en" : "has applicability"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "This property relates the indicator with the indicator applicability derived from the sustainability standards (either mandatory, optional, or enumerated)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#measuresGRITopic",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "4",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures GRI Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresGRITopic",
+      "en" : "measures GRI Topic"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "83",
+    "comment" : {
+      "en" : "This property relates the indicator with certain GRI Topic that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#hasNumeratorVariable",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "range" : "15",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Numerator Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumeratorVariable",
+      "en" : "has Numerator Variable"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "79",
+    "comment" : {
+      "en" : "This property relates the weighted indicator with the measurement variable (object) of the numerator derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "114"
+  } ]
+}

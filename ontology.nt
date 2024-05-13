@@ -1,0 +1,920 @@
+<https://www.blinded-for-review/rso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://www.blinded-for-review/rso> <http://purl.org/dc/elements/1.1/publisher> "Blinded for review"@en .
+<https://www.blinded-for-review/rso> <http://purl.org/dc/elements/1.1/title> "An Ontology towards Digital Sustainability Reporting"@en .
+<https://www.blinded-for-review/rso> <http://purl.org/dc/terms/abstract> "Sustainability reporting by Small and Medium Enterprises (SMEs) is gaining importance. SMEs form the backbone of European industries, and their customers rely on them to ensure regulatory compliance. In preparing sustainability reports, a combination of standards is commonly used, which encompasses overlapping yet distinct requirements on sustainability indicators. Different standards categorize shared indicators under varying topics, while they also mandate unique indicators to assess identical sustainability phenomena. This poses challenges for SMEs in reporting against multiple standards. Considerable human efforts are demanded to determine the interconnected requirements across different standards. Additionally, reporting on overlapping indicators for new standards results in significant redundant work. Mapping of indicators between different standards allows the semantic interoperability of standards by indicating matching and distinct requirements, aiding in addressing these challenges. The purpose of RSO is to facilitate the interoperability of sustainability standards by indicating the matching and distinct indicators. Indicator mapping will provide further information such as: which report data can be reused for another standard, what distinct requirements exist for the overlapping indicators in two standards, and which distinct indicators are required for the same topic/subtopic by different standards."@en .
+<https://www.blinded-for-review/rso> <http://purl.org/dc/terms/contributor> "Blinded for review" .
+<https://www.blinded-for-review/rso> <http://purl.org/dc/terms/created> "2023-12-01" .
+<https://www.blinded-for-review/rso> <http://purl.org/dc/terms/creator> "Blinded for review" .
+<https://www.blinded-for-review/rso> <http://purl.org/dc/terms/description> "RSO is designed  for mapping quantitative environmental indicators from the two significant sustainability reporting standards, GRI and ESRS. It formally represents (1) the classification and provenance information of indicators in the GRI and ESRS standards; (2) the requirements for indicators. RSO is envisioned to be integrated into the SME digital infrastructure. Accompanied by suitable digital infrastructure, the reporting system leveraging RSO as a knowledge base will empower the daily tasks of sustainability managers."@en .
+<https://www.blinded-for-review/rso> <http://purl.org/dc/terms/description> "The ontology defines the representation of environmental indicators in sustainability reporting standards GRI and ESRS."@en .
+<https://www.blinded-for-review/rso> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://www.blinded-for-review/rso> <http://purl.org/vocab/vann/preferredNamespacePrefix> "rso" .
+<https://www.blinded-for-review/rso> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.blinded-for-review/rso#" .
+<https://www.blinded-for-review/rso> <http://www.w3.org/2000/01/rdf-schema#comment> "RSO is designed for mapping quantitative environmental indicators from the two significant sustainability reporting standards, GRI and ESRS. It formally represents (1) the classification and provenance information of indicators in the GRI and ESRS standards; (2) the requirements for indicators. RSO is envisioned to be integrated into the SME digital infrastructure. Accompanied by suitable digital infrastructure, the reporting system leveraging RSO as a knowledge base will empower the daily tasks of sustainability managers."@en .
+<https://www.blinded-for-review/rso> <http://www.w3.org/2000/01/rdf-schema#label> "The Sustainability Reporting Standard Ontology"@en .
+<https://www.blinded-for-review/rso> <http://www.w3.org/2002/07/owl#versionIRI> "https://www.blinded-for-review/rso/0.1.0" .
+<https://www.blinded-for-review/rso> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<https://www.blinded-for-review/rso> <https://schema.org/url> "https://www.blinded-for-review/rso" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/url
+<https://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.blinded-for-review/rso#hasOfficialCode
+<https://www.blinded-for-review/rso#hasOfficialCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.blinded-for-review/rso#hasSelfDefinedCode
+<https://www.blinded-for-review/rso#hasSelfDefinedCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/hasQuantityKind
+<http://qudt.org/schema/qudt/hasQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qudt.org/schema/qudt/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://qudt.org/schema/qudt/Unit> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/schema/qudt/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://qudt.org/schema/qudt/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator with the required quantity kind derived from the sustainability standards."@en .
+<http://qudt.org/schema/qudt/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "has Quantity Kind"@en .
+<http://qudt.org/schema/qudt/hasQuantityKind> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Quantity Kind"@en .
+# 
+# https://qudt.org/schema/qudt/hasUnit
+<https://qudt.org/schema/qudt/hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://qudt.org/schema/qudt/hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Value> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://qudt.org/schema/qudt/hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/Unit> .
+<https://qudt.org/schema/qudt/hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator with the required unit derived from the sustainability standards."@en .
+<https://qudt.org/schema/qudt/hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has Unit"@en .
+<https://qudt.org/schema/qudt/hasUnit> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Unit"@en .
+# 
+# https://www.blinded-for-review/rso#hasApplicability
+<https://www.blinded-for-review/rso#hasApplicability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasApplicability> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#hasApplicability> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Applicability> .
+<https://www.blinded-for-review/rso#hasApplicability> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator with the indicator applicability derived from the sustainability standards (either mandatory, optional, or enumerated)."@en .
+<https://www.blinded-for-review/rso#hasApplicability> <http://www.w3.org/2000/01/rdf-schema#label> "has applicability"@en .
+<https://www.blinded-for-review/rso#hasApplicability> <http://www.w3.org/2004/02/skos/core#prefLabel> "has applicability"@en .
+# 
+# https://www.blinded-for-review/rso#hasBreakDownValue
+<https://www.blinded-for-review/rso#hasBreakDownValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasBreakDownValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#ReportValue> .
+<https://www.blinded-for-review/rso#hasBreakDownValue> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#BreakDownValue> .
+<https://www.blinded-for-review/rso#hasBreakDownValue> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a report value with several break down values."@en .
+<https://www.blinded-for-review/rso#hasBreakDownValue> <http://www.w3.org/2000/01/rdf-schema#label> "has break down value"@en .
+<https://www.blinded-for-review/rso#hasBreakDownValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "has break down value"@en .
+# 
+# https://www.blinded-for-review/rso#hasCalculationVariable
+<https://www.blinded-for-review/rso#hasCalculationVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasCalculationVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#AbsoluteIndicator> .
+<https://www.blinded-for-review/rso#hasCalculationVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#hasCalculationVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator to the required variables for calculating its value, as defined by mathematical functions in the sustainability standards."@en .
+<https://www.blinded-for-review/rso#hasCalculationVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has Calculation Variable"@en .
+<https://www.blinded-for-review/rso#hasCalculationVariable> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Calculation Variable"@en .
+# 
+# https://www.blinded-for-review/rso#hasDenominatorQuantityKind
+<https://www.blinded-for-review/rso#hasDenominatorQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasDenominatorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qudt.org/schema/qudt/hasQuantityKind> .
+<https://www.blinded-for-review/rso#hasDenominatorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#IntensityIndicator> .
+<https://www.blinded-for-review/rso#hasDenominatorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityKind> .
+<https://www.blinded-for-review/rso#hasDenominatorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the intensity indicator with the required quantity kind of the denominator derived from the sustainability standards."@en .
+<https://www.blinded-for-review/rso#hasDenominatorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "has Denominator Quantity Kind"@en .
+<https://www.blinded-for-review/rso#hasDenominatorQuantityKind> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Denominator Quantity Kind"@en .
+# 
+# https://www.blinded-for-review/rso#hasDenominatorVariable
+<https://www.blinded-for-review/rso#hasDenominatorVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasDenominatorVariable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.blinded-for-review/rso#hasMeasurementVariable> .
+<https://www.blinded-for-review/rso#hasDenominatorVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#WeightedIndicator> .
+<https://www.blinded-for-review/rso#hasDenominatorVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#hasDenominatorVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the weighted indicator with the measurement variable (object) of the denominator derived from the sustainability standards."@en .
+<https://www.blinded-for-review/rso#hasDenominatorVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has Denominator Variable"@en .
+<https://www.blinded-for-review/rso#hasDenominatorVariable> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Denominator Variable"@en .
+# 
+# https://www.blinded-for-review/rso#hasMeasurementVariable
+<https://www.blinded-for-review/rso#hasMeasurementVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasMeasurementVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#hasMeasurementVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#hasMeasurementVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator with the measurement variable (object) derived from the sustainability standards."@en .
+<https://www.blinded-for-review/rso#hasMeasurementVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has Measurement Variable"@en .
+<https://www.blinded-for-review/rso#hasMeasurementVariable> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Measurement Variable"@en .
+# 
+# https://www.blinded-for-review/rso#hasNegativeVariable
+<https://www.blinded-for-review/rso#hasNegativeVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasNegativeVariable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.blinded-for-review/rso#hasCalculationVariable> .
+<https://www.blinded-for-review/rso#hasNegativeVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#AbsoluteIndicator> .
+<https://www.blinded-for-review/rso#hasNegativeVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#hasNegativeVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is minus."@en .
+<https://www.blinded-for-review/rso#hasNegativeVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has Negative Variable"@en .
+<https://www.blinded-for-review/rso#hasNegativeVariable> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Negative Variable"@en .
+# 
+# https://www.blinded-for-review/rso#hasNumeratorQuantityKind
+<https://www.blinded-for-review/rso#hasNumeratorQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasNumeratorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qudt.org/schema/qudt/hasQuantityKind> .
+<https://www.blinded-for-review/rso#hasNumeratorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#IntensityIndicator> .
+<https://www.blinded-for-review/rso#hasNumeratorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityKind> .
+<https://www.blinded-for-review/rso#hasNumeratorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the intensity indicator with the required quantity kind of the numerator derived from the sustainability standards."@en .
+<https://www.blinded-for-review/rso#hasNumeratorQuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "has Numerator Quantity Kind"@en .
+<https://www.blinded-for-review/rso#hasNumeratorQuantityKind> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Numerator Quantity Kind"@en .
+# 
+# https://www.blinded-for-review/rso#hasNumeratorVariable
+<https://www.blinded-for-review/rso#hasNumeratorVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasNumeratorVariable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.blinded-for-review/rso#hasMeasurementVariable> .
+<https://www.blinded-for-review/rso#hasNumeratorVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#WeightedIndicator> .
+<https://www.blinded-for-review/rso#hasNumeratorVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#hasNumeratorVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the weighted indicator with the measurement variable (object) of the numerator derived from the sustainability standards."@en .
+<https://www.blinded-for-review/rso#hasNumeratorVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has Numerator Variable"@en .
+<https://www.blinded-for-review/rso#hasNumeratorVariable> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Numerator Variable"@en .
+# 
+# https://www.blinded-for-review/rso#hasPositiveVariable
+<https://www.blinded-for-review/rso#hasPositiveVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasPositiveVariable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.blinded-for-review/rso#hasCalculationVariable> .
+<https://www.blinded-for-review/rso#hasPositiveVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#AbsoluteIndicator> .
+<https://www.blinded-for-review/rso#hasPositiveVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#hasPositiveVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is plus."@en .
+<https://www.blinded-for-review/rso#hasPositiveVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has Positive Variable"@en .
+<https://www.blinded-for-review/rso#hasPositiveVariable> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Positive Variable"@en .
+# 
+# https://www.blinded-for-review/rso#hasReportValue
+<https://www.blinded-for-review/rso#hasReportValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasReportValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#Report> .
+<https://www.blinded-for-review/rso#hasReportValue> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#ReportValue> .
+<https://www.blinded-for-review/rso#hasReportValue> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links the sustainability report with the report value."@en .
+<https://www.blinded-for-review/rso#hasReportValue> <http://www.w3.org/2000/01/rdf-schema#label> "has report value"@en .
+<https://www.blinded-for-review/rso#hasReportValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "has report value"@en .
+# 
+# https://www.blinded-for-review/rso#hasSiblingIndicator
+<https://www.blinded-for-review/rso#hasSiblingIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#hasSiblingIndicator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://www.blinded-for-review/rso#hasSiblingIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://www.blinded-for-review/rso#hasSiblingIndicator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#hasSiblingIndicator> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#hasSiblingIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicators defined by the same standard setter with the same measurement variable but different quantity kind. This property is defined as a symmetric property."@en .
+<https://www.blinded-for-review/rso#hasSiblingIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "has Sibling Indicator"@en .
+<https://www.blinded-for-review/rso#hasSiblingIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Sibling Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#inDisclosure
+<https://www.blinded-for-review/rso#inDisclosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#inDisclosure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#GRIIndicator> .
+<https://www.blinded-for-review/rso#inDisclosure> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#GRIDisclosure> .
+<https://www.blinded-for-review/rso#inDisclosure> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a GRI indicator with the corresponding disclosure that defines this indicator in the GRI standards."@en .
+<https://www.blinded-for-review/rso#inDisclosure> <http://www.w3.org/2000/01/rdf-schema#label> "in GRI Disclosure"@en .
+<https://www.blinded-for-review/rso#inDisclosure> <http://www.w3.org/2004/02/skos/core#prefLabel> "in GRI Disclosure"@en .
+# 
+# https://www.blinded-for-review/rso#inDisclosureRequirement
+<https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#ESRSIndicator> .
+<https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#ESRSDisclosureRequirement> .
+<https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "User\nThis property relates an ESRS indicator with the corresponding ESRS Disclosure Requirement from where this indicator was derived."@en .
+<https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "in ESRS disclosure requirement"@en .
+<https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2004/02/skos/core#prefLabel> "in ESRS disclosure requirement"@en .
+# 
+# https://www.blinded-for-review/rso#inStandard
+<https://www.blinded-for-review/rso#inStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#inStandard> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Topic> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Disclosure> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#inStandard> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Standard> .
+<https://www.blinded-for-review/rso#inStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an indicator, a topic,  or a disclosure / disclosure requirement with the specific piece of either GRI standard or ESRS standard that defines this indicator or this disclosure."@en .
+<https://www.blinded-for-review/rso#inStandard> <http://www.w3.org/2000/01/rdf-schema#label> "in sustainability standard"@en .
+<https://www.blinded-for-review/rso#inStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "in sustainability standard"@en .
+# 
+# https://www.blinded-for-review/rso#isDefinedBy
+<https://www.blinded-for-review/rso#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Topic> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Disclosure> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#StandardSet> .
+<https://www.blinded-for-review/rso#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an indicator or a piece of standard with the specific standard set (either GRI or ESRS) that defines it."@en .
+<https://www.blinded-for-review/rso#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is Defined By"@en .
+<https://www.blinded-for-review/rso#isDefinedBy> <http://www.w3.org/2004/02/skos/core#definition> "is Defined By"@en .
+# 
+# https://www.blinded-for-review/rso#measuresCoreTopic
+<https://www.blinded-for-review/rso#measuresCoreTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#measuresCoreTopic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.blinded-for-review/rso#measuresTopic> .
+<https://www.blinded-for-review/rso#measuresCoreTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#measuresCoreTopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#CoreTopic> .
+<https://www.blinded-for-review/rso#measuresCoreTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator with certain Core Topic that the indicator measures."@en .
+<https://www.blinded-for-review/rso#measuresCoreTopic> <http://www.w3.org/2000/01/rdf-schema#label> "measures Core topic"@en .
+<https://www.blinded-for-review/rso#measuresCoreTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "measures Core topic"@en .
+# 
+# https://www.blinded-for-review/rso#measuresDimension
+<https://www.blinded-for-review/rso#measuresDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#measuresDimension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#measuresDimension> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#ESGDimension> .
+<https://www.blinded-for-review/rso#measuresDimension> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator with the ESG dimension (either Environmental, Social, or corporate Goverment) that the indicator measures."@en .
+<https://www.blinded-for-review/rso#measuresDimension> <http://www.w3.org/2000/01/rdf-schema#label> "measures ESG dimension"@en .
+<https://www.blinded-for-review/rso#measuresDimension> <http://www.w3.org/2004/02/skos/core#prefLabel> "measures ESG dimension"@en .
+# 
+# https://www.blinded-for-review/rso#measuresESRSTopic
+<https://www.blinded-for-review/rso#measuresESRSTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#measuresESRSTopic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.blinded-for-review/rso#measuresTopic> .
+<https://www.blinded-for-review/rso#measuresESRSTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#ESRSIndicator> .
+<https://www.blinded-for-review/rso#measuresESRSTopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#ESRSTopic> .
+<https://www.blinded-for-review/rso#measuresESRSTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator with certain ESRS Topic that the indicator measures."@en .
+<https://www.blinded-for-review/rso#measuresESRSTopic> <http://www.w3.org/2000/01/rdf-schema#label> "measures ESRS Topic"@en .
+<https://www.blinded-for-review/rso#measuresESRSTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "measures ESRS Topic"@en .
+# 
+# https://www.blinded-for-review/rso#measuresGRITopic
+<https://www.blinded-for-review/rso#measuresGRITopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#measuresGRITopic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.blinded-for-review/rso#measuresTopic> .
+<https://www.blinded-for-review/rso#measuresGRITopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#GRIIndicator> .
+<https://www.blinded-for-review/rso#measuresGRITopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#GRITopic> .
+<https://www.blinded-for-review/rso#measuresGRITopic> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator with certain GRI Topic that the indicator measures."@en .
+<https://www.blinded-for-review/rso#measuresGRITopic> <http://www.w3.org/2000/01/rdf-schema#label> "measures GRI Topic"@en .
+<https://www.blinded-for-review/rso#measuresGRITopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "measures GRI Topic"@en .
+# 
+# https://www.blinded-for-review/rso#measuresTopic
+<https://www.blinded-for-review/rso#measuresTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#measuresTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#measuresTopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Topic> .
+<https://www.blinded-for-review/rso#measuresTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator with specific sustainability topic that the indicator measures."@en .
+<https://www.blinded-for-review/rso#measuresTopic> <http://www.w3.org/2000/01/rdf-schema#label> "measures sustainability topic"@en .
+<https://www.blinded-for-review/rso#measuresTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "measures sustainability topic"@en .
+# 
+# https://www.blinded-for-review/rso#publish
+<https://www.blinded-for-review/rso#publish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#publish> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Organization> .
+<https://www.blinded-for-review/rso#publish> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Report> .
+<https://www.blinded-for-review/rso#publish> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an organization to the sustainability reports published by it."@en .
+<https://www.blinded-for-review/rso#publish> <http://www.w3.org/2000/01/rdf-schema#label> "publish"@en .
+<https://www.blinded-for-review/rso#publish> <http://www.w3.org/2004/02/skos/core#prefLabel> "publish"@en .
+# 
+# https://www.blinded-for-review/rso#reportsOnIndicator
+<https://www.blinded-for-review/rso#reportsOnIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.blinded-for-review/rso#reportsOnIndicator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#ReportValue> .
+<https://www.blinded-for-review/rso#reportsOnIndicator> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#reportsOnIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a reported value with the particular indicator derived from the standards, which the value represents."@en .
+<https://www.blinded-for-review/rso#reportsOnIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "reports on indicator"@en .
+<https://www.blinded-for-review/rso#reportsOnIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "reports on indicator"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://www.blinded-for-review/rso#hasNumericalValue
+<https://www.blinded-for-review/rso#hasNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.blinded-for-review/rso#hasNumericalValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.blinded-for-review/rso#hasNumericalValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#Value> .
+<https://www.blinded-for-review/rso#hasNumericalValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://www.blinded-for-review/rso#hasNumericalValue> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the indicator value with its specific numerical value."@en .
+<https://www.blinded-for-review/rso#hasNumericalValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Numerical Value"@en .
+<https://www.blinded-for-review/rso#hasNumericalValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Numerical Value"@en .
+# 
+# https://www.blinded-for-review/rso#hasYear
+<https://www.blinded-for-review/rso#hasYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.blinded-for-review/rso#hasYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.blinded-for-review/rso#hasYear> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#Report> .
+<https://www.blinded-for-review/rso#hasYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.blinded-for-review/rso#hasYear> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links the sustainability report to its publication year."@en .
+<https://www.blinded-for-review/rso#hasYear> <http://www.w3.org/2000/01/rdf-schema#label> "has Year"@en .
+<https://www.blinded-for-review/rso#hasYear> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Year"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/QuantityKind
+<http://qudt.org/schema/qudt/QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.blinded-for-review/rso#AbsoluteIndicator
+<https://www.blinded-for-review/rso#AbsoluteIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#AbsoluteIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#AbsoluteIndicator> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.blinded-for-review/rso#WeightedIndicator> .
+<https://www.blinded-for-review/rso#AbsoluteIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Absolute indicator represents the total quantity of a phenomenon."@en .
+<https://www.blinded-for-review/rso#AbsoluteIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Absolute Indicator"@en .
+<https://www.blinded-for-review/rso#AbsoluteIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Absolute Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#Applicability
+<https://www.blinded-for-review/rso#Applicability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Applicability> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#oneOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#optional> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#mandatory> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#enumerated> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Applicability> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether an indicator is required mandatorily or optionally by the corresponding standard."@en .
+<https://www.blinded-for-review/rso#Applicability> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator Requirement Applicability"@en .
+<https://www.blinded-for-review/rso#Applicability> <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicator Requirement Applicability"@en .
+# 
+# https://www.blinded-for-review/rso#BreakDownValue
+<https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Value> .
+<https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Breakdown values are crafted to meet the standards' requirements, allowing organizations to dissect a total report value based on specific criteria. \nThese breakdown values are linked to specific report values."@en .
+<https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/2000/01/rdf-schema#label> "Break Down Value"@en .
+<https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Break Down Value"@en .
+# 
+# https://www.blinded-for-review/rso#CoreEnvironmentTopic
+<https://www.blinded-for-review/rso#CoreEnvironmentTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#CoreEnvironmentTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#CoreTopic> .
+<https://www.blinded-for-review/rso#CoreEnvironmentTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "Individuals of CoreEnvironmentalTopic derive from the GRI standards and represent specific environmental issues. This classification aids in organizing and addressing distinct environmental aspects through targeted indicators."@en .
+<https://www.blinded-for-review/rso#CoreEnvironmentTopic> <http://www.w3.org/2000/01/rdf-schema#label> "Core Environment Topic"@en .
+<https://www.blinded-for-review/rso#CoreEnvironmentTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "Core Environment Topic"@en .
+# 
+# https://www.blinded-for-review/rso#CoreGovernanceTopic
+<https://www.blinded-for-review/rso#CoreGovernanceTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#CoreGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#CoreTopic> .
+<https://www.blinded-for-review/rso#CoreGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "Individuals of CoreGovernanceTopic are based on the GRI standards and represent unique governance concerns. These topics facilitate the categorization of governance-related indicators, promoting transparency and accountability in corporate governance practices."@en .
+<https://www.blinded-for-review/rso#CoreGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#label> "Core Governance Topic"@en .
+<https://www.blinded-for-review/rso#CoreGovernanceTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "Core Governance Topic"@en .
+# 
+# https://www.blinded-for-review/rso#CoreSocialTopic
+<https://www.blinded-for-review/rso#CoreSocialTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#CoreSocialTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#CoreTopic> .
+<https://www.blinded-for-review/rso#CoreSocialTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "Individuals of CoreSocialTopic are sourced from the GRI standards and encompass specific social issues. This categorization helps in the systematic reporting and evaluation of social topics, focusing on areas such as labor practices, human rights, and community engagement."@en .
+<https://www.blinded-for-review/rso#CoreSocialTopic> <http://www.w3.org/2000/01/rdf-schema#label> "Core Social Topic"@en .
+<https://www.blinded-for-review/rso#CoreSocialTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "Core Social Topic"@en .
+# 
+# https://www.blinded-for-review/rso#CoreTopic
+<https://www.blinded-for-review/rso#CoreTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#CoreTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Topic> .
+<https://www.blinded-for-review/rso#CoreTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "Individuals of CoreTopic are borrowed from the GRI standards which represents a singular environmental issue, facilitating indicator classification."@en .
+<https://www.blinded-for-review/rso#CoreTopic> <http://www.w3.org/2000/01/rdf-schema#label> "Core Topic"@en .
+<https://www.blinded-for-review/rso#CoreTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "Core Topic"@en .
+# 
+# https://www.blinded-for-review/rso#CorporateGovernanceIndicator
+<https://www.blinded-for-review/rso#CorporateGovernanceIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#CorporateGovernanceIndicator> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#hasValue> <https://www.blinded-for-review/rso#Governance> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://www.blinded-for-review/rso#measuresDimension> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://www.blinded-for-review/rso#CorporateGovernanceIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicators measure the corporate governance dimension of sustainability."@en .
+<https://www.blinded-for-review/rso#CorporateGovernanceIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Corporate governance indicator"@en .
+<https://www.blinded-for-review/rso#CorporateGovernanceIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Corporate governance indicator"@en .
+# 
+# https://www.blinded-for-review/rso#Disclosure
+<https://www.blinded-for-review/rso#Disclosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Disclosure> <http://www.w3.org/2000/01/rdf-schema#comment> "Covers indicators that allow an organization to report information about sustainability issues. This class is further subdivided into GRIDisclosure and ESRSDisclosureRequirement based on terms used in each standard respectively."@en .
+<https://www.blinded-for-review/rso#Disclosure> <http://www.w3.org/2000/01/rdf-schema#label> "Disclosure"@en .
+<https://www.blinded-for-review/rso#Disclosure> <http://www.w3.org/2004/02/skos/core#prefLabel> "Disclosure"@en .
+# 
+# https://www.blinded-for-review/rso#ESGDimension
+<https://www.blinded-for-review/rso#ESGDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESGDimension> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#oneOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Social> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Governance> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Environment> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESGDimension> <http://www.w3.org/2000/01/rdf-schema#comment> "Covers the three dimensions of sustainability and is defined as enumerated class."@en .
+<https://www.blinded-for-review/rso#ESGDimension> <http://www.w3.org/2000/01/rdf-schema#label> "ESG Dimension"@en .
+<https://www.blinded-for-review/rso#ESGDimension> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESG Dimension"@en .
+# 
+# https://www.blinded-for-review/rso#ESRSDisclosureRequirement
+<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Disclosure> .
+<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.efrag.org/Assets/Download?assetUrl=%2Fsites%2Fwebpublishing%2FSiteAssets%2F06%2520Draft%2520ESRS%25201%2520General%2520requirements%2520November%25202022.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Disclosure Requirement"@en .
+<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS structure the information to be disclosed under Disclosure Requirements.\nDisclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement."@en .
+<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Disclosure Requirement"@en .
+<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS structure the information to be disclosed under Disclosure Requirements.\nDisclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement."@en .
+# 
+# https://www.blinded-for-review/rso#ESRSEnvironmentTopic
+<https://www.blinded-for-review/rso#ESRSEnvironmentTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSEnvironmentTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#ESRSTopic> .
+<https://www.blinded-for-review/rso#ESRSEnvironmentTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "ESRS topics derived from the ESRS standards describing the environmental dimension." .
+<https://www.blinded-for-review/rso#ESRSEnvironmentTopic> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Environment Topic"@en .
+<https://www.blinded-for-review/rso#ESRSEnvironmentTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Environment Topic"@en .
+# 
+# https://www.blinded-for-review/rso#ESRSGovernanceTopic
+<https://www.blinded-for-review/rso#ESRSGovernanceTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#ESRSTopic> .
+<https://www.blinded-for-review/rso#ESRSGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "ESRS topics derived from the ESRS standards describing the governance dimension." .
+<https://www.blinded-for-review/rso#ESRSGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Governance Topic"@en .
+<https://www.blinded-for-review/rso#ESRSGovernanceTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Governance Topic"@en .
+# 
+# https://www.blinded-for-review/rso#ESRSIndicator
+<https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.blinded-for-review/rso#GRIIndicator> .
+<https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "ESRS indicator is a specific measurement or metric defined under the European Sustainability Reporting Standards (ESRS)."@en .
+<https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Indicator"@en .
+<https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#ESRSSocialTopic
+<https://www.blinded-for-review/rso#ESRSSocialTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSSocialTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#ESRSTopic> .
+<https://www.blinded-for-review/rso#ESRSSocialTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "ESRS topics derived from the ESRS standards describing the social dimension." .
+<https://www.blinded-for-review/rso#ESRSSocialTopic> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Social Topic"@en .
+<https://www.blinded-for-review/rso#ESRSSocialTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Social Topic"@en .
+# 
+# https://www.blinded-for-review/rso#ESRSStandard
+<https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Standard> .
+<https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "The European Sustainability Reporting Standards (ESRS) establish a comprehensive framework for sustainability reporting by companies operating within the European Union. These guidelines detail specific reporting requirements, encompassing both broad principles and detailed disclosure obligations."@en .
+<https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Standard"@en .
+<https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Standard"@en .
+# 
+# https://www.blinded-for-review/rso#ESRSTopic
+<https://www.blinded-for-review/rso#ESRSTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Topic> .
+<https://www.blinded-for-review/rso#ESRSTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "ESRS topics derived from the ESRS standards."@en .
+<https://www.blinded-for-review/rso#ESRSTopic> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Topic"@en .
+<https://www.blinded-for-review/rso#ESRSTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Topic"@en .
+# 
+# https://www.blinded-for-review/rso#ESRSTopicalStandard
+<https://www.blinded-for-review/rso#ESRSTopicalStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSTopicalStandard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#ESRSStandard> .
+<https://www.blinded-for-review/rso#ESRSTopicalStandard> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.blinded-for-review/rso#ESRSUniversalStandard> .
+<https://www.blinded-for-review/rso#ESRSTopicalStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "ESRS topical standards provide detailed disclosure requirements across environmental (E), social (S), and governance (G) topics. Environmental (E) topic focus on aspects related to environmental impact, such as climate change, biodiversity, and resource use. Social (S) standards address social matters, including human rights, labor practices, and community engagement.Governance (G) standards pertain to governance practices, board structures, and transparency."@en .
+<https://www.blinded-for-review/rso#ESRSTopicalStandard> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Topical Standard"@en .
+<https://www.blinded-for-review/rso#ESRSTopicalStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Topical Standard"@en .
+# 
+# https://www.blinded-for-review/rso#ESRSUniversalStandard
+<https://www.blinded-for-review/rso#ESRSUniversalStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#ESRSStandard> .
+<https://www.blinded-for-review/rso#ESRSUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "ESRS universal standards provide general reporting concepts and overarching disclosure requirements that apply across all undertakings, regardless of the sector they operate in."@en .
+<https://www.blinded-for-review/rso#ESRSUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Universal Standard"@en .
+<https://www.blinded-for-review/rso#ESRSUniversalStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Universal Standard"@en .
+# 
+# https://www.blinded-for-review/rso#Emission
+<https://www.blinded-for-review/rso#Emission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Emission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#Emission> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable that quantifies emissions."@en .
+<https://www.blinded-for-review/rso#Emission> <http://www.w3.org/2000/01/rdf-schema#label> "Emission"@en .
+<https://www.blinded-for-review/rso#Emission> <http://www.w3.org/2004/02/skos/core#prefLabel> "Emission"@en .
+# 
+# https://www.blinded-for-review/rso#EmissionIndicator
+<https://www.blinded-for-review/rso#EmissionIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#EmissionIndicator> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid27 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.blinded-for-review/rso#Emission> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://www.blinded-for-review/rso#hasMeasurementVariable> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://www.blinded-for-review/rso#EmissionIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicators measure the emission topic."@en .
+<https://www.blinded-for-review/rso#EmissionIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Emission Indicator"@en .
+<https://www.blinded-for-review/rso#EmissionIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Emission Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#EnergyIndicator
+<https://www.blinded-for-review/rso#EnergyIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#EnergyIndicator> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.blinded-for-review/rso#EnergyVariable> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://www.blinded-for-review/rso#hasMeasurementVariable> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://www.blinded-for-review/rso#EnergyIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicators that measure the energy topic."@en .
+<https://www.blinded-for-review/rso#EnergyIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Indicator"@en .
+<https://www.blinded-for-review/rso#EnergyIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Energy Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#EnergyVariable
+<https://www.blinded-for-review/rso#EnergyVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#EnergyVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#EnergyVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable that quantifies energy metrics."@en .
+<https://www.blinded-for-review/rso#EnergyVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Energy"@en .
+<https://www.blinded-for-review/rso#EnergyVariable> <http://www.w3.org/2004/02/skos/core#prefLabel> "Energy"@en .
+# 
+# https://www.blinded-for-review/rso#EnvironmentalIndicator
+<https://www.blinded-for-review/rso#EnvironmentalIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#EnvironmentalIndicator> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid35 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#hasValue> <https://www.blinded-for-review/rso#Environment> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://www.blinded-for-review/rso#measuresDimension> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://www.blinded-for-review/rso#EnvironmentalIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicators that measure the environmen dimension of sustainability."@en .
+<https://www.blinded-for-review/rso#EnvironmentalIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Indicator"@en .
+<https://www.blinded-for-review/rso#EnvironmentalIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Environmental Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#GRIDisclosure
+<https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Disclosure> .
+<https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2000/01/rdf-schema#comment> "The GRI Standards contain disclosures that allow an organization to report information about its impacts consistently and\ncredibly."@en .
+<https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.globalreporting.org/pdf.ashx?id=12334"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Disclosure"@en .
+<https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Disclosure"@en .
+# 
+# https://www.blinded-for-review/rso#GRIEnvironmentTopic
+<https://www.blinded-for-review/rso#GRIEnvironmentTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#GRIEnvironmentTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#GRITopic> .
+<https://www.blinded-for-review/rso#GRIEnvironmentTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI topics derived from the GRI standards describing the environmental dimension." .
+<https://www.blinded-for-review/rso#GRIEnvironmentTopic> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Environment Topic"@en .
+<https://www.blinded-for-review/rso#GRIEnvironmentTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Environment Topic"@en .
+# 
+# https://www.blinded-for-review/rso#GRIGovernanceTopic
+<https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#GRITopic> .
+<https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI topics derived from the GRI standards describing the governance dimension." .
+<https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Governance Topic"@en .
+<https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Governance Topic"@en .
+# 
+# https://www.blinded-for-review/rso#GRIIndicator
+<https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI indicators are part of the Global Reporting Initiative (GRI) Standards, which are widely used for sustainability reporting globally."@en .
+<https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Indicator"@en .
+<https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#GRISocialTopic
+<https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#GRITopic> .
+<https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI topics derived from the GRI standards describing the social dimension." .
+<https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Social Topic"@en .
+<https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Social Topic"@en .
+# 
+# https://www.blinded-for-review/rso#GRIStandard
+<https://www.blinded-for-review/rso#GRIStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#GRIStandard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Standard> .
+<https://www.blinded-for-review/rso#GRIStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "A GRI standard is a piece of the GRI Sustainability Reporting Standards (GRI Standards). For example, GRI 301: Materials 2016."@en .
+<https://www.blinded-for-review/rso#GRIStandard> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Standard"@en .
+<https://www.blinded-for-review/rso#GRIStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Standard"@en .
+# 
+# https://www.blinded-for-review/rso#GRITopic
+<https://www.blinded-for-review/rso#GRITopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#GRITopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Topic> .
+<https://www.blinded-for-review/rso#GRITopic> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI topics derived from the GRI standards."@en .
+<https://www.blinded-for-review/rso#GRITopic> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Topic"@en .
+<https://www.blinded-for-review/rso#GRITopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Topic"@en .
+# 
+# https://www.blinded-for-review/rso#GRITopicStandard
+<https://www.blinded-for-review/rso#GRITopicStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#GRITopicStandard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#GRIStandard> .
+<https://www.blinded-for-review/rso#GRITopicStandard> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.blinded-for-review/rso#GRIUniversalStandard> .
+<https://www.blinded-for-review/rso#GRITopicStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "The Topic Standards contain disclosures that the organization uses to report information about its impacts in relation to particular topics. The organization uses the Topic Standards according to the list of material topics it has determined using GRI 3."@en .
+<https://www.blinded-for-review/rso#GRITopicStandard> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Topic Standard"@en .
+<https://www.blinded-for-review/rso#GRITopicStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Topic Standard"@en .
+# 
+# https://www.blinded-for-review/rso#GRIUniversalStandard
+<https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#GRIStandard> .
+<https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Standards defined in GRI standards are: GRI 1, GRI 2 and GRI 3\nGRI 1: Foundation 2021 specifies the requirements that the organization must comply with to report in accordance with the GRI Standards. The organization begins using the GRI Standards by consulting GRI 1.\nGRI 2: General Disclosures 2021 contains disclosures that the organization uses to provide information about its reporting practices and other organizational details, such as its activities, governance, and policies.\nGRI 3: Material Topics 2021 provides guidance on how to determine material topics. It also contains disclosures that the organization uses to report information about its process of determining material topics, its list of material topics, and how it manages each topic."@en .
+<https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Universal Standard"@en .
+<https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Universal Standard"@en .
+# 
+# https://www.blinded-for-review/rso#Indicator
+<https://www.blinded-for-review/rso#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Indicator> <http://www.w3.org/2000/01/rdf-schema#comment> "A single measure from which conclusions on the phenomenon of interest can be inferred."@en .
+<https://www.blinded-for-review/rso#Indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Sustainability Indicator"@en .
+<https://www.blinded-for-review/rso#Indicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sustainability Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#IntensityIndicator
+<https://www.blinded-for-review/rso#IntensityIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#IntensityIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#WeightedIndicator> .
+<https://www.blinded-for-review/rso#IntensityIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "An intensity indicator has different quantity kinds and units on numerator and denominator." .
+<https://www.blinded-for-review/rso#IntensityIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Intensity Indicator"@en .
+<https://www.blinded-for-review/rso#IntensityIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Intensity Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#Material
+<https://www.blinded-for-review/rso#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable that quantifies material usage."@en .
+<https://www.blinded-for-review/rso#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
+<https://www.blinded-for-review/rso#Material> <http://www.w3.org/2004/02/skos/core#prefLabel> "Material"@en .
+# 
+# https://www.blinded-for-review/rso#MaterialIndicator
+<https://www.blinded-for-review/rso#MaterialIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#MaterialIndicator> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid39 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.blinded-for-review/rso#Material> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://www.blinded-for-review/rso#hasMeasurementVariable> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://www.blinded-for-review/rso#MaterialIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicators measure the material topic."@en .
+<https://www.blinded-for-review/rso#MaterialIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Material Indicator"@en .
+<https://www.blinded-for-review/rso#MaterialIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Material Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#PercentageIndicator
+<https://www.blinded-for-review/rso#PercentageIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#PercentageIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#WeightedIndicator> .
+<https://www.blinded-for-review/rso#PercentageIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "A percentage indicator shares the same quantity kind on both numerator and denominator."@en .
+<https://www.blinded-for-review/rso#PercentageIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Percentage Indicator"@en .
+<https://www.blinded-for-review/rso#PercentageIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Percentage Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#Report
+<https://www.blinded-for-review/rso#Report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Report> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the annual sustainability report published by a certain organization and complies with certain standards."@en .
+<https://www.blinded-for-review/rso#Report> <http://www.w3.org/2000/01/rdf-schema#label> "Sustainability Report"@en .
+<https://www.blinded-for-review/rso#Report> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sustainability Report"@en .
+# 
+# https://www.blinded-for-review/rso#ReportValue
+<https://www.blinded-for-review/rso#ReportValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ReportValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Value> .
+<https://www.blinded-for-review/rso#ReportValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides a structure to represent a single report data. Each data contains a numerical value and a measurement unit and is linked to a specific indicator."@en .
+<https://www.blinded-for-review/rso#ReportValue> <http://www.w3.org/2000/01/rdf-schema#label> "Sustaianbility Report Value"@en .
+<https://www.blinded-for-review/rso#ReportValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sustainability Report Value"@en .
+# 
+# https://www.blinded-for-review/rso#SocialIndicator
+<https://www.blinded-for-review/rso#SocialIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#SocialIndicator> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid43 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#hasValue> <https://www.blinded-for-review/rso#Social> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://www.blinded-for-review/rso#measuresDimension> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://www.blinded-for-review/rso#SocialIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicators measure the social dimension of sustainability."@en .
+<https://www.blinded-for-review/rso#SocialIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Social indicator"@en .
+<https://www.blinded-for-review/rso#SocialIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Social indicator"@en .
+# 
+# https://www.blinded-for-review/rso#Standard
+<https://www.blinded-for-review/rso#Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Standard> <http://www.w3.org/2000/01/rdf-schema#comment> "A sustainability reporting standard is a piece of standard that is defined by a specific standard setter. For example, the standard GRI 301: Materials 2016 is part of the GRI Sustainability Reporting Standards (GRI Standards).\nThis class is defined as the super class for subclasses."@en .
+<https://www.blinded-for-review/rso#Standard> <http://www.w3.org/2000/01/rdf-schema#label> "Sustainability Standard"@en .
+<https://www.blinded-for-review/rso#Standard> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sustainability Standard"@en .
+# 
+# https://www.blinded-for-review/rso#StandardSet
+<https://www.blinded-for-review/rso#StandardSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#StandardSet> <http://www.w3.org/2000/01/rdf-schema#comment> "Models a series of sustainability reporting standards."@en .
+<https://www.blinded-for-review/rso#StandardSet> <http://www.w3.org/2000/01/rdf-schema#label> "Standard Set"@en .
+<https://www.blinded-for-review/rso#StandardSet> <http://www.w3.org/2004/02/skos/core#prefLabel> "Standard Set"@en .
+# 
+# https://www.blinded-for-review/rso#Topic
+<https://www.blinded-for-review/rso#Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Topic> <http://www.w3.org/2000/01/rdf-schema#comment> "delineates sustainability issues."@en .
+<https://www.blinded-for-review/rso#Topic> <http://www.w3.org/2000/01/rdf-schema#label> "Sustainability Topic"@en .
+<https://www.blinded-for-review/rso#Topic> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sustainability Topic"@en .
+# 
+# https://www.blinded-for-review/rso#Value
+<https://www.blinded-for-review/rso#Value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Value> <http://www.w3.org/2000/01/rdf-schema#comment> "This class acts as a collective framework for organizing quantitative data within sustainability reports. It encompasses two subclasses:(1) ReportValue, which structures individual data entries including numerical values and units linked to specific indicators, and (2) BreakdownValue, which allows for detailed disaggregation of data according to defined criteria, enhancing data analysis and reporting precision."@en .
+<https://www.blinded-for-review/rso#Value> <http://www.w3.org/2000/01/rdf-schema#label> "Value"@en .
+<https://www.blinded-for-review/rso#Value> <http://www.w3.org/2004/02/skos/core#prefLabel> "Value"@en .
+# 
+# https://www.blinded-for-review/rso#Variable
+<https://www.blinded-for-review/rso#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Variable> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable encompasses a hierarchy of subtopics within specific sustainability areas. It represents a measurable value of a phenomenon, like 'total energy consumption'."@en .
+<https://www.blinded-for-review/rso#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "Sustainability Variable"@en .
+<https://www.blinded-for-review/rso#Variable> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sustainability Variable"@en .
+# 
+# https://www.blinded-for-review/rso#Waste
+<https://www.blinded-for-review/rso#Waste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#Waste> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Variable> .
+<https://www.blinded-for-review/rso#Waste> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable that quantifies waste metrics."@en .
+<https://www.blinded-for-review/rso#Waste> <http://www.w3.org/2000/01/rdf-schema#label> "Waste"@en .
+<https://www.blinded-for-review/rso#Waste> <http://www.w3.org/2004/02/skos/core#prefLabel> "Waste"@en .
+# 
+# https://www.blinded-for-review/rso#WasteIndicator
+<https://www.blinded-for-review/rso#WasteIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#WasteIndicator> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid47 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.blinded-for-review/rso#Waste> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://www.blinded-for-review/rso#hasMeasurementVariable> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#Indicator> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://www.blinded-for-review/rso#WasteIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicators measure the waste topic."@en .
+<https://www.blinded-for-review/rso#WasteIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Waste Indicator"@en .
+<https://www.blinded-for-review/rso#WasteIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Waste Indicator"@en .
+# 
+# https://www.blinded-for-review/rso#WeightedIndicator
+<https://www.blinded-for-review/rso#WeightedIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#WeightedIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#WeightedIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Weighted indicator considers additional factors through weighting."@en .
+<https://www.blinded-for-review/rso#WeightedIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Weighted Indicator"@en .
+<https://www.blinded-for-review/rso#WeightedIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "Weighted Indicator"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://www.blinded-for-review/rso#Environment
+<https://www.blinded-for-review/rso#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.blinded-for-review/rso#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.blinded-for-review/rso#ESGDimension> .
+<https://www.blinded-for-review/rso#Environment> <http://www.w3.org/2000/01/rdf-schema#comment> "Emissions such as greenhouse gases and air, water and ground pollution emissions falls under the Environmental dimension of sustainability."@en .
+<https://www.blinded-for-review/rso#Environment> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental (E)"@en .
+<https://www.blinded-for-review/rso#Environment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Environmental (E)"@en .
+# 
+# https://www.blinded-for-review/rso#Governance
+<https://www.blinded-for-review/rso#Governance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.blinded-for-review/rso#Governance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.blinded-for-review/rso#ESGDimension> .
+<https://www.blinded-for-review/rso#Governance> <http://www.w3.org/2000/01/rdf-schema#comment> "The main issues reported under the Governance Pillar are shareholders rights, board diversity, how executives are compensated and how their compensation is aligned with the company’s sustainability performance. It also includes matters of corporate behaviour such as anti-competitive practices and corruption."@en .
+<https://www.blinded-for-review/rso#Governance> <http://www.w3.org/2000/01/rdf-schema#label> "Coporate Governance (G)"@en .
+<https://www.blinded-for-review/rso#Governance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Coporate Governance (G)" .
+# 
+# https://www.blinded-for-review/rso#Social
+<https://www.blinded-for-review/rso#Social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.blinded-for-review/rso#Social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.blinded-for-review/rso#ESGDimension> .
+<https://www.blinded-for-review/rso#Social> <http://www.w3.org/2000/01/rdf-schema#comment> "Under the Social dimension, companies report on how they manage their employee development and labour practices."@en .
+<https://www.blinded-for-review/rso#Social> <http://www.w3.org/2000/01/rdf-schema#label> "Social (S)"@en .
+<https://www.blinded-for-review/rso#Social> <http://www.w3.org/2004/02/skos/core#prefLabel> "Social (S)"@en .
+# 
+# https://www.blinded-for-review/rso#enumerated
+<https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.blinded-for-review/rso#Applicability> .
+<https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/2000/01/rdf-schema#comment> "An enumerated requirement is described as \"the organization shall report on the information of A or B of a phenomenon\".\nFor example, \"the reporting organization shall report the following information: total weight or volume of materials that are used to produce .....\", refering to GRI 301-1."@en .
+<https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/2000/01/rdf-schema#label> "enumerated"@en .
+<https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/2004/02/skos/core#prefLabel> "enumerated"@en .
+# 
+# https://www.blinded-for-review/rso#mandatory
+<https://www.blinded-for-review/rso#mandatory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.blinded-for-review/rso#mandatory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.blinded-for-review/rso#Applicability> .
+<https://www.blinded-for-review/rso#mandatory> <http://www.w3.org/2000/01/rdf-schema#comment> "A mandatory requirement for an indicator is indicated by the word \"shall\" in the requirement description."@en .
+<https://www.blinded-for-review/rso#mandatory> <http://www.w3.org/2000/01/rdf-schema#label> "mandatory"@en .
+<https://www.blinded-for-review/rso#mandatory> <http://www.w3.org/2004/02/skos/core#prefLabel> "mandatory"@en .
+# 
+# https://www.blinded-for-review/rso#optional
+<https://www.blinded-for-review/rso#optional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.blinded-for-review/rso#optional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.blinded-for-review/rso#Applicability> .
+<https://www.blinded-for-review/rso#optional> <http://www.w3.org/2000/01/rdf-schema#comment> "An optional requirement for an indicator is indicated by the expression \"if applicable\" in the requirement description."@en .
+<https://www.blinded-for-review/rso#optional> <http://www.w3.org/2000/01/rdf-schema#label> "optional"@en .
+<https://www.blinded-for-review/rso#optional> <http://www.w3.org/2004/02/skos/core#prefLabel> "optional"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid51 <http://www.w3.org/2002/07/owl#members> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#CoreSocialTopic> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#CoreGovernanceTopic> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#CoreEnvironmentTopic> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid55 <http://www.w3.org/2002/07/owl#members> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#ESRSSocialTopic> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#ESRSGovernanceTopic> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#ESRSEnvironmentTopic> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid59 <http://www.w3.org/2002/07/owl#members> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#GRISocialTopic> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#GRIGovernanceTopic> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.blinded-for-review/rso#GRIEnvironmentTopic> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

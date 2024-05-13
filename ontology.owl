@@ -1,0 +1,1431 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.blinded-for-review/rso#"
+     xml:base="https://www.blinded-for-review/rso"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rso="https://www.blinded-for-review/rso#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="https://www.blinded-for-review/rso">
+        <dc:publisher xml:lang="en">Blinded for review</dc:publisher>
+        <dc:title xml:lang="en">An Ontology towards Digital Sustainability Reporting</dc:title>
+        <terms:abstract xml:lang="en">Sustainability reporting by Small and Medium Enterprises (SMEs) is gaining importance. SMEs form the backbone of European industries, and their customers rely on them to ensure regulatory compliance. In preparing sustainability reports, a combination of standards is commonly used, which encompasses overlapping yet distinct requirements on sustainability indicators. Different standards categorize shared indicators under varying topics, while they also mandate unique indicators to assess identical sustainability phenomena. This poses challenges for SMEs in reporting against multiple standards. Considerable human efforts are demanded to determine the interconnected requirements across different standards. Additionally, reporting on overlapping indicators for new standards results in significant redundant work. Mapping of indicators between different standards allows the semantic interoperability of standards by indicating matching and distinct requirements, aiding in addressing these challenges. The purpose of RSO is to facilitate the interoperability of sustainability standards by indicating the matching and distinct indicators. Indicator mapping will provide further information such as: which report data can be reused for another standard, what distinct requirements exist for the overlapping indicators in two standards, and which distinct indicators are required for the same topic/subtopic by different standards.</terms:abstract>
+        <terms:contributor>Blinded for review</terms:contributor>
+        <terms:created>2023-12-01</terms:created>
+        <terms:creator>Blinded for review</terms:creator>
+        <terms:description xml:lang="en">RSO is designed  for mapping quantitative environmental indicators from the two significant sustainability reporting standards, GRI and ESRS. It formally represents (1) the classification and provenance information of indicators in the GRI and ESRS standards; (2) the requirements for indicators. RSO is envisioned to be integrated into the SME digital infrastructure. Accompanied by suitable digital infrastructure, the reporting system leveraging RSO as a knowledge base will empower the daily tasks of sustainability managers.</terms:description>
+        <terms:description xml:lang="en">The ontology defines the representation of environmental indicators in sustainability reporting standards GRI and ESRS.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <vann:preferredNamespacePrefix>rso</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://www.blinded-for-review/rso#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">RSO is designed for mapping quantitative environmental indicators from the two significant sustainability reporting standards, GRI and ESRS. It formally represents (1) the classification and provenance information of indicators in the GRI and ESRS standards; (2) the requirements for indicators. RSO is envisioned to be integrated into the SME digital infrastructure. Accompanied by suitable digital infrastructure, the reporting system leveraging RSO as a knowledge base will empower the daily tasks of sustainability managers.</rdfs:comment>
+        <rdfs:label xml:lang="en">The Sustainability Reporting Standard Ontology</rdfs:label>
+        <owl:versionIRI>https://www.blinded-for-review/rso/0.1.0</owl:versionIRI>
+        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <schema:url>https://www.blinded-for-review/rso</schema:url>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- https://schema.org/url -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/url"/>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasOfficialCode -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.blinded-for-review/rso#hasOfficialCode"/>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasSelfDefinedCode -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.blinded-for-review/rso#hasSelfDefinedCode"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/hasQuantityKind -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/hasQuantityKind">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator with the required quantity kind derived from the sustainability standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Quantity Kind</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Quantity Kind</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://qudt.org/schema/qudt/hasUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://qudt.org/schema/qudt/hasUnit">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Value"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator with the required unit derived from the sustainability standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Unit</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Unit</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasApplicability -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasApplicability">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Applicability"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator with the indicator applicability derived from the sustainability standards (either mandatory, optional, or enumerated).</rdfs:comment>
+        <rdfs:label xml:lang="en">has applicability</rdfs:label>
+        <skos:prefLabel xml:lang="en">has applicability</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasBreakDownValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasBreakDownValue">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#ReportValue"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#BreakDownValue"/>
+        <rdfs:comment xml:lang="en">This property links a report value with several break down values.</rdfs:comment>
+        <rdfs:label xml:lang="en">has break down value</rdfs:label>
+        <skos:prefLabel xml:lang="en">has break down value</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasCalculationVariable -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasCalculationVariable">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#AbsoluteIndicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator to the required variables for calculating its value, as defined by mathematical functions in the sustainability standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Calculation Variable</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Calculation Variable</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasDenominatorQuantityKind -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasDenominatorQuantityKind">
+        <rdfs:subPropertyOf rdf:resource="http://qudt.org/schema/qudt/hasQuantityKind"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#IntensityIndicator"/>
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdfs:comment xml:lang="en">This property relates the intensity indicator with the required quantity kind of the denominator derived from the sustainability standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Denominator Quantity Kind</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Denominator Quantity Kind</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasDenominatorVariable -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasDenominatorVariable">
+        <rdfs:subPropertyOf rdf:resource="https://www.blinded-for-review/rso#hasMeasurementVariable"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#WeightedIndicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">This property relates the weighted indicator with the measurement variable (object) of the denominator derived from the sustainability standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Denominator Variable</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Denominator Variable</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasMeasurementVariable -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasMeasurementVariable">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator with the measurement variable (object) derived from the sustainability standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Measurement Variable</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Measurement Variable</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasNegativeVariable -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasNegativeVariable">
+        <rdfs:subPropertyOf rdf:resource="https://www.blinded-for-review/rso#hasCalculationVariable"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#AbsoluteIndicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is minus.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Negative Variable</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Negative Variable</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasNumeratorQuantityKind -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasNumeratorQuantityKind">
+        <rdfs:subPropertyOf rdf:resource="http://qudt.org/schema/qudt/hasQuantityKind"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#IntensityIndicator"/>
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdfs:comment xml:lang="en">This property relates the intensity indicator with the required quantity kind of the numerator derived from the sustainability standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Numerator Quantity Kind</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Numerator Quantity Kind</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasNumeratorVariable -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasNumeratorVariable">
+        <rdfs:subPropertyOf rdf:resource="https://www.blinded-for-review/rso#hasMeasurementVariable"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#WeightedIndicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">This property relates the weighted indicator with the measurement variable (object) of the numerator derived from the sustainability standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Numerator Variable</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Numerator Variable</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasPositiveVariable -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasPositiveVariable">
+        <rdfs:subPropertyOf rdf:resource="https://www.blinded-for-review/rso#hasCalculationVariable"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#AbsoluteIndicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is plus.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Positive Variable</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Positive Variable</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasReportValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasReportValue">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#Report"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#ReportValue"/>
+        <rdfs:comment xml:lang="en">This property links the sustainability report with the report value.</rdfs:comment>
+        <rdfs:label xml:lang="en">has report value</rdfs:label>
+        <skos:prefLabel xml:lang="en">has report value</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasSiblingIndicator -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#hasSiblingIndicator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:comment xml:lang="en">This property relates the indicators defined by the same standard setter with the same measurement variable but different quantity kind. This property is defined as a symmetric property.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Sibling Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Sibling Indicator</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#inDisclosure -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#inDisclosure">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#GRIIndicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#GRIDisclosure"/>
+        <rdfs:comment xml:lang="en">This property relates a GRI indicator with the corresponding disclosure that defines this indicator in the GRI standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">in GRI Disclosure</rdfs:label>
+        <skos:prefLabel xml:lang="en">in GRI Disclosure</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#inDisclosureRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#inDisclosureRequirement">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#ESRSIndicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#ESRSDisclosureRequirement"/>
+        <rdfs:comment xml:lang="en">User
+This property relates an ESRS indicator with the corresponding ESRS Disclosure Requirement from where this indicator was derived.</rdfs:comment>
+        <rdfs:label xml:lang="en">in ESRS disclosure requirement</rdfs:label>
+        <skos:prefLabel xml:lang="en">in ESRS disclosure requirement</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#inStandard -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#inStandard">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Disclosure"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Topic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Standard"/>
+        <rdfs:comment xml:lang="en">This property relates an indicator, a topic,  or a disclosure / disclosure requirement with the specific piece of either GRI standard or ESRS standard that defines this indicator or this disclosure.</rdfs:comment>
+        <rdfs:label xml:lang="en">in sustainability standard</rdfs:label>
+        <skos:prefLabel xml:lang="en">in sustainability standard</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#isDefinedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#isDefinedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Disclosure"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Topic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#StandardSet"/>
+        <rdfs:comment xml:lang="en">This property relates an indicator or a piece of standard with the specific standard set (either GRI or ESRS) that defines it.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Defined By</rdfs:label>
+        <skos:definition xml:lang="en">is Defined By</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#measuresCoreTopic -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#measuresCoreTopic">
+        <rdfs:subPropertyOf rdf:resource="https://www.blinded-for-review/rso#measuresTopic"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#CoreTopic"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator with certain Core Topic that the indicator measures.</rdfs:comment>
+        <rdfs:label xml:lang="en">measures Core topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">measures Core topic</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#measuresDimension -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#measuresDimension">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#ESGDimension"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator with the ESG dimension (either Environmental, Social, or corporate Goverment) that the indicator measures.</rdfs:comment>
+        <rdfs:label xml:lang="en">measures ESG dimension</rdfs:label>
+        <skos:prefLabel xml:lang="en">measures ESG dimension</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#measuresESRSTopic -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#measuresESRSTopic">
+        <rdfs:subPropertyOf rdf:resource="https://www.blinded-for-review/rso#measuresTopic"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#ESRSIndicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#ESRSTopic"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator with certain ESRS Topic that the indicator measures.</rdfs:comment>
+        <rdfs:label xml:lang="en">measures ESRS Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">measures ESRS Topic</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#measuresGRITopic -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#measuresGRITopic">
+        <rdfs:subPropertyOf rdf:resource="https://www.blinded-for-review/rso#measuresTopic"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#GRIIndicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#GRITopic"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator with certain GRI Topic that the indicator measures.</rdfs:comment>
+        <rdfs:label xml:lang="en">measures GRI Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">measures GRI Topic</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#measuresTopic -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#measuresTopic">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Topic"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator with specific sustainability topic that the indicator measures.</rdfs:comment>
+        <rdfs:label xml:lang="en">measures sustainability topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">measures sustainability topic</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#publish -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#publish">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Report"/>
+        <rdfs:comment xml:lang="en">This property links an organization to the sustainability reports published by it.</rdfs:comment>
+        <rdfs:label xml:lang="en">publish</rdfs:label>
+        <skos:prefLabel xml:lang="en">publish</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#reportsOnIndicator -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.blinded-for-review/rso#reportsOnIndicator">
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#ReportValue"/>
+        <rdfs:range rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:comment xml:lang="en">This property associates a reported value with the particular indicator derived from the standards, which the value represents.</rdfs:comment>
+        <rdfs:label xml:lang="en">reports on indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">reports on indicator</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasNumericalValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.blinded-for-review/rso#hasNumericalValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#Value"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">This property relates the indicator value with its specific numerical value.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Numerical Value</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Numerical Value</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#hasYear -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.blinded-for-review/rso#hasYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://www.blinded-for-review/rso#Report"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property links the sustainability report to its publication year.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Year</rdfs:label>
+        <skos:prefLabel xml:lang="en">has Year</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/QuantityKind -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/QuantityKind"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Unit -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization"/>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#AbsoluteIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#AbsoluteIndicator">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <owl:disjointWith rdf:resource="https://www.blinded-for-review/rso#WeightedIndicator"/>
+        <rdfs:comment xml:lang="en">Absolute indicator represents the total quantity of a phenomenon.</rdfs:comment>
+        <rdfs:label xml:lang="en">Absolute Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Absolute Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Applicability -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Applicability">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#enumerated"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#mandatory"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#optional"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Indicates whether an indicator is required mandatorily or optionally by the corresponding standard.</rdfs:comment>
+        <rdfs:label xml:lang="en">Indicator Requirement Applicability</rdfs:label>
+        <skos:prefLabel xml:lang="en">Indicator Requirement Applicability</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#BreakDownValue -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#BreakDownValue">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Value"/>
+        <rdfs:comment xml:lang="en">Breakdown values are crafted to meet the standards&apos; requirements, allowing organizations to dissect a total report value based on specific criteria. 
+These breakdown values are linked to specific report values.</rdfs:comment>
+        <rdfs:label xml:lang="en">Break Down Value</rdfs:label>
+        <skos:prefLabel xml:lang="en">Break Down Value</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#CoreEnvironmentTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#CoreEnvironmentTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#CoreTopic"/>
+        <rdfs:comment xml:lang="en">Individuals of CoreEnvironmentalTopic derive from the GRI standards and represent specific environmental issues. This classification aids in organizing and addressing distinct environmental aspects through targeted indicators.</rdfs:comment>
+        <rdfs:label xml:lang="en">Core Environment Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Core Environment Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#CoreGovernanceTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#CoreGovernanceTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#CoreTopic"/>
+        <rdfs:comment xml:lang="en">Individuals of CoreGovernanceTopic are based on the GRI standards and represent unique governance concerns. These topics facilitate the categorization of governance-related indicators, promoting transparency and accountability in corporate governance practices.</rdfs:comment>
+        <rdfs:label xml:lang="en">Core Governance Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Core Governance Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#CoreSocialTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#CoreSocialTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#CoreTopic"/>
+        <rdfs:comment xml:lang="en">Individuals of CoreSocialTopic are sourced from the GRI standards and encompass specific social issues. This categorization helps in the systematic reporting and evaluation of social topics, focusing on areas such as labor practices, human rights, and community engagement.</rdfs:comment>
+        <rdfs:label xml:lang="en">Core Social Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Core Social Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#CoreTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#CoreTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Topic"/>
+        <rdfs:comment xml:lang="en">Individuals of CoreTopic are borrowed from the GRI standards which represents a singular environmental issue, facilitating indicator classification.</rdfs:comment>
+        <rdfs:label xml:lang="en">Core Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Core Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#CorporateGovernanceIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#CorporateGovernanceIndicator">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.blinded-for-review/rso#measuresDimension"/>
+                        <owl:hasValue rdf:resource="https://www.blinded-for-review/rso#Governance"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Indicators measure the corporate governance dimension of sustainability.</rdfs:comment>
+        <rdfs:label xml:lang="en">Corporate governance indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Corporate governance indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Disclosure -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Disclosure">
+        <rdfs:comment xml:lang="en">Covers indicators that allow an organization to report information about sustainability issues. This class is further subdivided into GRIDisclosure and ESRSDisclosureRequirement based on terms used in each standard respectively.</rdfs:comment>
+        <rdfs:label xml:lang="en">Disclosure</rdfs:label>
+        <skos:prefLabel xml:lang="en">Disclosure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESGDimension -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESGDimension">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Environment"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Governance"/>
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Social"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Covers the three dimensions of sustainability and is defined as enumerated class.</rdfs:comment>
+        <rdfs:label xml:lang="en">ESG Dimension</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESG Dimension</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESRSDisclosureRequirement -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSDisclosureRequirement">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Disclosure"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.efrag.org/Assets/Download?assetUrl=%2Fsites%2Fwebpublishing%2FSiteAssets%2F06%2520Draft%2520ESRS%25201%2520General%2520requirements%2520November%25202022.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ESRS Disclosure Requirement</rdfs:label>
+        <rdfs:label xml:lang="en">ESRS structure the information to be disclosed under Disclosure Requirements.
+Disclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement.</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESRS Disclosure Requirement</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">ESRS structure the information to be disclosed under Disclosure Requirements.
+Disclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement.</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESRSEnvironmentTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSEnvironmentTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#ESRSTopic"/>
+        <rdfs:comment>ESRS topics derived from the ESRS standards describing the environmental dimension.</rdfs:comment>
+        <rdfs:label xml:lang="en">ESRS Environment Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESRS Environment Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESRSGovernanceTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSGovernanceTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#ESRSTopic"/>
+        <rdfs:comment>ESRS topics derived from the ESRS standards describing the governance dimension.</rdfs:comment>
+        <rdfs:label xml:lang="en">ESRS Governance Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESRS Governance Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESRSIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSIndicator">
+        <owl:disjointWith rdf:resource="https://www.blinded-for-review/rso#GRIIndicator"/>
+        <rdfs:comment xml:lang="en">ESRS indicator is a specific measurement or metric defined under the European Sustainability Reporting Standards (ESRS).</rdfs:comment>
+        <rdfs:label xml:lang="en">ESRS Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESRS Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESRSSocialTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSSocialTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#ESRSTopic"/>
+        <rdfs:comment>ESRS topics derived from the ESRS standards describing the social dimension.</rdfs:comment>
+        <rdfs:label xml:lang="en">ESRS Social Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESRS Social Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESRSStandard -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSStandard">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Standard"/>
+        <rdfs:comment xml:lang="en">The European Sustainability Reporting Standards (ESRS) establish a comprehensive framework for sustainability reporting by companies operating within the European Union. These guidelines detail specific reporting requirements, encompassing both broad principles and detailed disclosure obligations.</rdfs:comment>
+        <rdfs:label xml:lang="en">ESRS Standard</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESRS Standard</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESRSTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Topic"/>
+        <rdfs:comment xml:lang="en">ESRS topics derived from the ESRS standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">ESRS Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESRS Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESRSTopicalStandard -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSTopicalStandard">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#ESRSStandard"/>
+        <owl:disjointWith rdf:resource="https://www.blinded-for-review/rso#ESRSUniversalStandard"/>
+        <rdfs:comment xml:lang="en">ESRS topical standards provide detailed disclosure requirements across environmental (E), social (S), and governance (G) topics. Environmental (E) topic focus on aspects related to environmental impact, such as climate change, biodiversity, and resource use. Social (S) standards address social matters, including human rights, labor practices, and community engagement.Governance (G) standards pertain to governance practices, board structures, and transparency.</rdfs:comment>
+        <rdfs:label xml:lang="en">ESRS Topical Standard</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESRS Topical Standard</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ESRSUniversalStandard -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSUniversalStandard">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#ESRSStandard"/>
+        <rdfs:comment xml:lang="en">ESRS universal standards provide general reporting concepts and overarching disclosure requirements that apply across all undertakings, regardless of the sector they operate in.</rdfs:comment>
+        <rdfs:label xml:lang="en">ESRS Universal Standard</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESRS Universal Standard</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Emission -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Emission">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">A variable that quantifies emissions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Emission</rdfs:label>
+        <skos:prefLabel xml:lang="en">Emission</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#EmissionIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#EmissionIndicator">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.blinded-for-review/rso#hasMeasurementVariable"/>
+                        <owl:someValuesFrom rdf:resource="https://www.blinded-for-review/rso#Emission"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Indicators measure the emission topic.</rdfs:comment>
+        <rdfs:label xml:lang="en">Emission Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Emission Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#EnergyIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#EnergyIndicator">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.blinded-for-review/rso#hasMeasurementVariable"/>
+                        <owl:someValuesFrom rdf:resource="https://www.blinded-for-review/rso#EnergyVariable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Indicators that measure the energy topic.</rdfs:comment>
+        <rdfs:label xml:lang="en">Energy Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Energy Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#EnergyVariable -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#EnergyVariable">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">A variable that quantifies energy metrics.</rdfs:comment>
+        <rdfs:label xml:lang="en">Energy</rdfs:label>
+        <skos:prefLabel xml:lang="en">Energy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#EnvironmentalIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#EnvironmentalIndicator">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.blinded-for-review/rso#measuresDimension"/>
+                        <owl:hasValue rdf:resource="https://www.blinded-for-review/rso#Environment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Indicators that measure the environmen dimension of sustainability.</rdfs:comment>
+        <rdfs:label xml:lang="en">Environmental Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Environmental Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#GRIDisclosure -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#GRIDisclosure">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Disclosure"/>
+        <rdfs:comment xml:lang="en">The GRI Standards contain disclosures that allow an organization to report information about its impacts consistently and
+credibly.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.globalreporting.org/pdf.ashx?id=12334</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">GRI Disclosure</rdfs:label>
+        <skos:prefLabel xml:lang="en">GRI Disclosure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#GRIEnvironmentTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#GRIEnvironmentTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#GRITopic"/>
+        <rdfs:comment>GRI topics derived from the GRI standards describing the environmental dimension.</rdfs:comment>
+        <rdfs:label xml:lang="en">GRI Environment Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">GRI Environment Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#GRIGovernanceTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#GRIGovernanceTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#GRITopic"/>
+        <rdfs:comment>GRI topics derived from the GRI standards describing the governance dimension.</rdfs:comment>
+        <rdfs:label xml:lang="en">GRI Governance Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">GRI Governance Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#GRIIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#GRIIndicator">
+        <rdfs:comment xml:lang="en">GRI indicators are part of the Global Reporting Initiative (GRI) Standards, which are widely used for sustainability reporting globally.</rdfs:comment>
+        <rdfs:label xml:lang="en">GRI Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">GRI Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#GRISocialTopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#GRISocialTopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#GRITopic"/>
+        <rdfs:comment>GRI topics derived from the GRI standards describing the social dimension.</rdfs:comment>
+        <rdfs:label xml:lang="en">GRI Social Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">GRI Social Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#GRIStandard -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#GRIStandard">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Standard"/>
+        <rdfs:comment xml:lang="en">A GRI standard is a piece of the GRI Sustainability Reporting Standards (GRI Standards). For example, GRI 301: Materials 2016.</rdfs:comment>
+        <rdfs:label xml:lang="en">GRI Standard</rdfs:label>
+        <skos:prefLabel xml:lang="en">GRI Standard</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#GRITopic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#GRITopic">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Topic"/>
+        <rdfs:comment xml:lang="en">GRI topics derived from the GRI standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">GRI Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">GRI Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#GRITopicStandard -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#GRITopicStandard">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#GRIStandard"/>
+        <owl:disjointWith rdf:resource="https://www.blinded-for-review/rso#GRIUniversalStandard"/>
+        <rdfs:comment xml:lang="en">The Topic Standards contain disclosures that the organization uses to report information about its impacts in relation to particular topics. The organization uses the Topic Standards according to the list of material topics it has determined using GRI 3.</rdfs:comment>
+        <rdfs:label xml:lang="en">GRI Topic Standard</rdfs:label>
+        <skos:prefLabel xml:lang="en">GRI Topic Standard</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#GRIUniversalStandard -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#GRIUniversalStandard">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#GRIStandard"/>
+        <rdfs:comment xml:lang="en">The Universal Standards defined in GRI standards are: GRI 1, GRI 2 and GRI 3
+GRI 1: Foundation 2021 specifies the requirements that the organization must comply with to report in accordance with the GRI Standards. The organization begins using the GRI Standards by consulting GRI 1.
+GRI 2: General Disclosures 2021 contains disclosures that the organization uses to provide information about its reporting practices and other organizational details, such as its activities, governance, and policies.
+GRI 3: Material Topics 2021 provides guidance on how to determine material topics. It also contains disclosures that the organization uses to report information about its process of determining material topics, its list of material topics, and how it manages each topic.</rdfs:comment>
+        <rdfs:label xml:lang="en">GRI Universal Standard</rdfs:label>
+        <skos:prefLabel xml:lang="en">GRI Universal Standard</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Indicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Indicator">
+        <rdfs:comment xml:lang="en">A single measure from which conclusions on the phenomenon of interest can be inferred.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sustainability Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sustainability Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#IntensityIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#IntensityIndicator">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#WeightedIndicator"/>
+        <rdfs:comment>An intensity indicator has different quantity kinds and units on numerator and denominator.</rdfs:comment>
+        <rdfs:label xml:lang="en">Intensity Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Intensity Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Material -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Material">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">A variable that quantifies material usage.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material</rdfs:label>
+        <skos:prefLabel xml:lang="en">Material</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#MaterialIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#MaterialIndicator">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.blinded-for-review/rso#hasMeasurementVariable"/>
+                        <owl:someValuesFrom rdf:resource="https://www.blinded-for-review/rso#Material"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Indicators measure the material topic.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Material Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#PercentageIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#PercentageIndicator">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#WeightedIndicator"/>
+        <rdfs:comment xml:lang="en">A percentage indicator shares the same quantity kind on both numerator and denominator.</rdfs:comment>
+        <rdfs:label xml:lang="en">Percentage Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Percentage Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Report -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Report">
+        <rdfs:comment xml:lang="en">Represents the annual sustainability report published by a certain organization and complies with certain standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sustainability Report</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sustainability Report</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#ReportValue -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#ReportValue">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Value"/>
+        <rdfs:comment xml:lang="en">Provides a structure to represent a single report data. Each data contains a numerical value and a measurement unit and is linked to a specific indicator.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sustaianbility Report Value</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sustainability Report Value</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#SocialIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#SocialIndicator">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.blinded-for-review/rso#measuresDimension"/>
+                        <owl:hasValue rdf:resource="https://www.blinded-for-review/rso#Social"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Indicators measure the social dimension of sustainability.</rdfs:comment>
+        <rdfs:label xml:lang="en">Social indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Social indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Standard -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Standard">
+        <rdfs:comment xml:lang="en">A sustainability reporting standard is a piece of standard that is defined by a specific standard setter. For example, the standard GRI 301: Materials 2016 is part of the GRI Sustainability Reporting Standards (GRI Standards).
+This class is defined as the super class for subclasses.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sustainability Standard</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sustainability Standard</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#StandardSet -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#StandardSet">
+        <rdfs:comment xml:lang="en">Models a series of sustainability reporting standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">Standard Set</rdfs:label>
+        <skos:prefLabel xml:lang="en">Standard Set</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Topic -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Topic">
+        <rdfs:comment xml:lang="en">delineates sustainability issues.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sustainability Topic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sustainability Topic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Value -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Value">
+        <rdfs:comment xml:lang="en">This class acts as a collective framework for organizing quantitative data within sustainability reports. It encompasses two subclasses:(1) ReportValue, which structures individual data entries including numerical values and units linked to specific indicators, and (2) BreakdownValue, which allows for detailed disaggregation of data according to defined criteria, enhancing data analysis and reporting precision.</rdfs:comment>
+        <rdfs:label xml:lang="en">Value</rdfs:label>
+        <skos:prefLabel xml:lang="en">Value</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Variable -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Variable">
+        <rdfs:comment xml:lang="en">A variable encompasses a hierarchy of subtopics within specific sustainability areas. It represents a measurable value of a phenomenon, like &apos;total energy consumption&apos;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sustainability Variable</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sustainability Variable</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Waste -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#Waste">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Variable"/>
+        <rdfs:comment xml:lang="en">A variable that quantifies waste metrics.</rdfs:comment>
+        <rdfs:label xml:lang="en">Waste</rdfs:label>
+        <skos:prefLabel xml:lang="en">Waste</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#WasteIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#WasteIndicator">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.blinded-for-review/rso#Indicator"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.blinded-for-review/rso#hasMeasurementVariable"/>
+                        <owl:someValuesFrom rdf:resource="https://www.blinded-for-review/rso#Waste"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Indicators measure the waste topic.</rdfs:comment>
+        <rdfs:label xml:lang="en">Waste Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Waste Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#WeightedIndicator -->
+
+
+    <owl:Class rdf:about="https://www.blinded-for-review/rso#WeightedIndicator">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:comment xml:lang="en">Weighted indicator considers additional factors through weighting.</rdfs:comment>
+        <rdfs:label xml:lang="en">Weighted Indicator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Weighted Indicator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Environment -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.blinded-for-review/rso#Environment">
+        <rdf:type rdf:resource="https://www.blinded-for-review/rso#ESGDimension"/>
+        <rdfs:comment xml:lang="en">Emissions such as greenhouse gases and air, water and ground pollution emissions falls under the Environmental dimension of sustainability.</rdfs:comment>
+        <rdfs:label xml:lang="en">Environmental (E)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Environmental (E)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Governance -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.blinded-for-review/rso#Governance">
+        <rdf:type rdf:resource="https://www.blinded-for-review/rso#ESGDimension"/>
+        <rdfs:comment xml:lang="en">The main issues reported under the Governance Pillar are shareholders rights, board diversity, how executives are compensated and how their compensation is aligned with the company’s sustainability performance. It also includes matters of corporate behaviour such as anti-competitive practices and corruption.</rdfs:comment>
+        <rdfs:label xml:lang="en">Coporate Governance (G)</rdfs:label>
+        <skos:prefLabel>Coporate Governance (G)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#Social -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.blinded-for-review/rso#Social">
+        <rdf:type rdf:resource="https://www.blinded-for-review/rso#ESGDimension"/>
+        <rdfs:comment xml:lang="en">Under the Social dimension, companies report on how they manage their employee development and labour practices.</rdfs:comment>
+        <rdfs:label xml:lang="en">Social (S)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Social (S)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#enumerated -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.blinded-for-review/rso#enumerated">
+        <rdf:type rdf:resource="https://www.blinded-for-review/rso#Applicability"/>
+        <rdfs:comment xml:lang="en">An enumerated requirement is described as &quot;the organization shall report on the information of A or B of a phenomenon&quot;.
+For example, &quot;the reporting organization shall report the following information: total weight or volume of materials that are used to produce .....&quot;, refering to GRI 301-1.</rdfs:comment>
+        <rdfs:label xml:lang="en">enumerated</rdfs:label>
+        <skos:prefLabel xml:lang="en">enumerated</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#mandatory -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.blinded-for-review/rso#mandatory">
+        <rdf:type rdf:resource="https://www.blinded-for-review/rso#Applicability"/>
+        <rdfs:comment xml:lang="en">A mandatory requirement for an indicator is indicated by the word &quot;shall&quot; in the requirement description.</rdfs:comment>
+        <rdfs:label xml:lang="en">mandatory</rdfs:label>
+        <skos:prefLabel xml:lang="en">mandatory</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.blinded-for-review/rso#optional -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.blinded-for-review/rso#optional">
+        <rdf:type rdf:resource="https://www.blinded-for-review/rso#Applicability"/>
+        <rdfs:comment xml:lang="en">An optional requirement for an indicator is indicated by the expression &quot;if applicable&quot; in the requirement description.</rdfs:comment>
+        <rdfs:label xml:lang="en">optional</rdfs:label>
+        <skos:prefLabel xml:lang="en">optional</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.blinded-for-review/rso#CoreEnvironmentTopic"/>
+            <rdf:Description rdf:about="https://www.blinded-for-review/rso#CoreGovernanceTopic"/>
+            <rdf:Description rdf:about="https://www.blinded-for-review/rso#CoreSocialTopic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.blinded-for-review/rso#ESRSEnvironmentTopic"/>
+            <rdf:Description rdf:about="https://www.blinded-for-review/rso#ESRSGovernanceTopic"/>
+            <rdf:Description rdf:about="https://www.blinded-for-review/rso#ESRSSocialTopic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.blinded-for-review/rso#GRIEnvironmentTopic"/>
+            <rdf:Description rdf:about="https://www.blinded-for-review/rso#GRIGovernanceTopic"/>
+            <rdf:Description rdf:about="https://www.blinded-for-review/rso#GRISocialTopic"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
