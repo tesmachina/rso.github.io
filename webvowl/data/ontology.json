@@ -4,7 +4,7 @@
     "languages" : [ "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "https://qudt.org/schema/qudt", "http://www.w3.org/2002/07/owl", "http://www.w3.org/ns/org", "http://www.w3.org/2000/01/rdf-schema", "https://www.blinded-for-review/rso", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
-      "en" : "An Ontology towards Digital Sustainability Reporting"
+      "en" : "The Sustainability Report Standard Ontology"
     },
     "iri" : "https://www.blinded-for-review/rso",
     "version" : "0.1.0",
@@ -82,7 +82,7 @@
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
-        "value" : "An Ontology towards Digital Sustainability Reporting",
+        "value" : "The Sustainability Report Standard Ontology",
         "type" : "label"
       } ],
       "url" : [ {
@@ -624,7 +624,7 @@
         } ]
       },
       "comment" : {
-        "en" : "The main issues reported under the Governance Pillar are shareholders rights, board diversity, how executives are compensated and how their compensation is aligned with the company’s sustainability performance. It also includes matters of corporate behaviour such as anti-competitive practices and corruption."
+        "en" : "The main issues reported under the Governance Pillar are shareholders rights, board diversity, how executives are compensated and how their compensation is aligned with the companyÂ’s sustainability performance. It also includes matters of corporate behaviour such as anti-competitive practices and corruption."
       },
       "labels" : {
         "IRI-based" : "Governance",
@@ -1371,7 +1371,7 @@
       }, {
         "identifier" : "prefLabel",
         "language" : "en",
-        "value" : "ESRS structure the information to be disclosed under Disclosure Requirements.\nDisclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement.",
+        "value" : "ESRS structure the information to be disclosed under Disclosure Requirements.\nDisclosure Requirements consist of more granular datapoints. The term Â“datapointÂ” in this context also refers to a narrative sub-element of a Disclosure Requirement.",
         "type" : "label"
       } ]
     },
