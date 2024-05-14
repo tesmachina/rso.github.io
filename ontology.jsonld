@@ -346,7 +346,7 @@
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "An Ontology towards Digital Sustainability Reporting"
+    "@value" : "The Sustainability Report Standard Ontology"
   } ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "en",
