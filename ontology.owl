@@ -777,13 +777,11 @@ These breakdown values are linked to specific report values.</rdfs:comment>
 
     <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSDisclosureRequirement">
         <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Disclosure"/>
+        <rdfs:comment xml:lang="en">ESRS structure the information to be disclosed under Disclosure Requirements.
+Disclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.efrag.org/Assets/Download?assetUrl=%2Fsites%2Fwebpublishing%2FSiteAssets%2F06%2520Draft%2520ESRS%25201%2520General%2520requirements%2520November%25202022.pdf</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">ESRS Disclosure Requirement</rdfs:label>
-        <rdfs:label xml:lang="en">ESRS structure the information to be disclosed under Disclosure Requirements.
-Disclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement.</rdfs:label>
         <skos:prefLabel xml:lang="en">ESRS Disclosure Requirement</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">ESRS structure the information to be disclosed under Disclosure Requirements.
-Disclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement.</skos:prefLabel>
     </owl:Class>
     
 
@@ -816,8 +814,9 @@ Disclosure Requirements consist of more granular datapoints. The term “datapoi
 
 
     <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSIndicator">
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
         <owl:disjointWith rdf:resource="https://www.blinded-for-review/rso#GRIIndicator"/>
-        <rdfs:comment xml:lang="en">ESRS indicator is a specific measurement or metric defined under the European Sustainability Reporting Standards (ESRS).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicators derived from the ESRS standards.</rdfs:comment>
         <rdfs:label xml:lang="en">ESRS Indicator</rdfs:label>
         <skos:prefLabel xml:lang="en">ESRS Indicator</skos:prefLabel>
     </owl:Class>
@@ -841,7 +840,7 @@ Disclosure Requirements consist of more granular datapoints. The term “datapoi
 
     <owl:Class rdf:about="https://www.blinded-for-review/rso#ESRSStandard">
         <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Standard"/>
-        <rdfs:comment xml:lang="en">The European Sustainability Reporting Standards (ESRS) establish a comprehensive framework for sustainability reporting by companies operating within the European Union. These guidelines detail specific reporting requirements, encompassing both broad principles and detailed disclosure obligations.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A piece of the sustainability reporting standard derived from the ESRS.</rdfs:comment>
         <rdfs:label xml:lang="en">ESRS Standard</rdfs:label>
         <skos:prefLabel xml:lang="en">ESRS Standard</skos:prefLabel>
     </owl:Class>
@@ -1006,7 +1005,7 @@ credibly.</rdfs:comment>
 
     <owl:Class rdf:about="https://www.blinded-for-review/rso#GRIGovernanceTopic">
         <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#GRITopic"/>
-        <rdfs:comment>GRI topics derived from the GRI standards describing the governance dimension.</rdfs:comment>
+        <rdfs:comment xml:lang="en">GRI topics derived from the GRI standards describing the governance dimension.</rdfs:comment>
         <rdfs:label xml:lang="en">GRI Governance Topic</rdfs:label>
         <skos:prefLabel xml:lang="en">GRI Governance Topic</skos:prefLabel>
     </owl:Class>
@@ -1017,7 +1016,8 @@ credibly.</rdfs:comment>
 
 
     <owl:Class rdf:about="https://www.blinded-for-review/rso#GRIIndicator">
-        <rdfs:comment xml:lang="en">GRI indicators are part of the Global Reporting Initiative (GRI) Standards, which are widely used for sustainability reporting globally.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#Indicator"/>
+        <rdfs:comment xml:lang="en">Indicators derived from the GRI standards.</rdfs:comment>
         <rdfs:label xml:lang="en">GRI Indicator</rdfs:label>
         <skos:prefLabel xml:lang="en">GRI Indicator</skos:prefLabel>
     </owl:Class>
@@ -1029,7 +1029,7 @@ credibly.</rdfs:comment>
 
     <owl:Class rdf:about="https://www.blinded-for-review/rso#GRISocialTopic">
         <rdfs:subClassOf rdf:resource="https://www.blinded-for-review/rso#GRITopic"/>
-        <rdfs:comment>GRI topics derived from the GRI standards describing the social dimension.</rdfs:comment>
+        <rdfs:comment xml:lang="en">GRI topics derived from the GRI standards describing the social dimension.</rdfs:comment>
         <rdfs:label xml:lang="en">GRI Social Topic</rdfs:label>
         <skos:prefLabel xml:lang="en">GRI Social Topic</skos:prefLabel>
     </owl:Class>

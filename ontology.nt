@@ -236,7 +236,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.blinded-for-review/rso#ESRSIndicator> .
 <https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.blinded-for-review/rso#ESRSDisclosureRequirement> .
-<https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "User\nThis property relates an ESRS indicator with the corresponding ESRS Disclosure Requirement from where this indicator was derived."@en .
+<https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "User\r\nThis property relates an ESRS indicator with the corresponding ESRS Disclosure Requirement from where this indicator was derived."@en .
 <https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "in ESRS disclosure requirement"@en .
 <https://www.blinded-for-review/rso#inDisclosureRequirement> <http://www.w3.org/2004/02/skos/core#prefLabel> "in ESRS disclosure requirement"@en .
 # 
@@ -411,7 +411,7 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://www.blinded-for-review/rso#BreakDownValue
 <https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Value> .
-<https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Breakdown values are crafted to meet the standards' requirements, allowing organizations to dissect a total report value based on specific criteria. \nThese breakdown values are linked to specific report values."@en .
+<https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Breakdown values are crafted to meet the standards' requirements, allowing organizations to dissect a total report value based on specific criteria. \r\nThese breakdown values are linked to specific report values."@en .
 <https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/2000/01/rdf-schema#label> "Break Down Value"@en .
 <https://www.blinded-for-review/rso#BreakDownValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Break Down Value"@en .
 # 
@@ -488,11 +488,10 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://www.blinded-for-review/rso#ESRSDisclosureRequirement
 <https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Disclosure> .
+<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "ESRS structure the information to be disclosed under Disclosure Requirements.\r\nDisclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement."@en .
 <https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.efrag.org/Assets/Download?assetUrl=%2Fsites%2Fwebpublishing%2FSiteAssets%2F06%2520Draft%2520ESRS%25201%2520General%2520requirements%2520November%25202022.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Disclosure Requirement"@en .
-<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS structure the information to be disclosed under Disclosure Requirements.\nDisclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement."@en .
 <https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Disclosure Requirement"@en .
-<https://www.blinded-for-review/rso#ESRSDisclosureRequirement> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS structure the information to be disclosed under Disclosure Requirements.\nDisclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement."@en .
 # 
 # https://www.blinded-for-review/rso#ESRSEnvironmentTopic
 <https://www.blinded-for-review/rso#ESRSEnvironmentTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -510,8 +509,9 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://www.blinded-for-review/rso#ESRSIndicator
 <https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Indicator> .
 <https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.blinded-for-review/rso#GRIIndicator> .
-<https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "ESRS indicator is a specific measurement or metric defined under the European Sustainability Reporting Standards (ESRS)."@en .
+<https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicators derived from the ESRS standards."@en .
 <https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Indicator"@en .
 <https://www.blinded-for-review/rso#ESRSIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Indicator"@en .
 # 
@@ -525,7 +525,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://www.blinded-for-review/rso#ESRSStandard
 <https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Standard> .
-<https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "The European Sustainability Reporting Standards (ESRS) establish a comprehensive framework for sustainability reporting by companies operating within the European Union. These guidelines detail specific reporting requirements, encompassing both broad principles and detailed disclosure obligations."@en .
+<https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of the sustainability reporting standard derived from the ESRS."@en .
 <https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/2000/01/rdf-schema#label> "ESRS Standard"@en .
 <https://www.blinded-for-review/rso#ESRSStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Standard"@en .
 # 
@@ -622,7 +622,7 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://www.blinded-for-review/rso#GRIDisclosure
 <https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Disclosure> .
-<https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2000/01/rdf-schema#comment> "The GRI Standards contain disclosures that allow an organization to report information about its impacts consistently and\ncredibly."@en .
+<https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2000/01/rdf-schema#comment> "The GRI Standards contain disclosures that allow an organization to report information about its impacts consistently and\r\ncredibly."@en .
 <https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.globalreporting.org/pdf.ashx?id=12334"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Disclosure"@en .
 <https://www.blinded-for-review/rso#GRIDisclosure> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Disclosure"@en .
@@ -637,20 +637,21 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://www.blinded-for-review/rso#GRIGovernanceTopic
 <https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#GRITopic> .
-<https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI topics derived from the GRI standards describing the governance dimension." .
+<https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI topics derived from the GRI standards describing the governance dimension."@en .
 <https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Governance Topic"@en .
 <https://www.blinded-for-review/rso#GRIGovernanceTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Governance Topic"@en .
 # 
 # https://www.blinded-for-review/rso#GRIIndicator
 <https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI indicators are part of the Global Reporting Initiative (GRI) Standards, which are widely used for sustainability reporting globally."@en .
+<https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#Indicator> .
+<https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicators derived from the GRI standards."@en .
 <https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Indicator"@en .
 <https://www.blinded-for-review/rso#GRIIndicator> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Indicator"@en .
 # 
 # https://www.blinded-for-review/rso#GRISocialTopic
 <https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#GRITopic> .
-<https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI topics derived from the GRI standards describing the social dimension." .
+<https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "GRI topics derived from the GRI standards describing the social dimension."@en .
 <https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Social Topic"@en .
 <https://www.blinded-for-review/rso#GRISocialTopic> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Social Topic"@en .
 # 
@@ -679,7 +680,7 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://www.blinded-for-review/rso#GRIUniversalStandard
 <https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.blinded-for-review/rso#GRIStandard> .
-<https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Standards defined in GRI standards are: GRI 1, GRI 2 and GRI 3\nGRI 1: Foundation 2021 specifies the requirements that the organization must comply with to report in accordance with the GRI Standards. The organization begins using the GRI Standards by consulting GRI 1.\nGRI 2: General Disclosures 2021 contains disclosures that the organization uses to provide information about its reporting practices and other organizational details, such as its activities, governance, and policies.\nGRI 3: Material Topics 2021 provides guidance on how to determine material topics. It also contains disclosures that the organization uses to report information about its process of determining material topics, its list of material topics, and how it manages each topic."@en .
+<https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Standards defined in GRI standards are: GRI 1, GRI 2 and GRI 3\r\nGRI 1: Foundation 2021 specifies the requirements that the organization must comply with to report in accordance with the GRI Standards. The organization begins using the GRI Standards by consulting GRI 1.\r\nGRI 2: General Disclosures 2021 contains disclosures that the organization uses to provide information about its reporting practices and other organizational details, such as its activities, governance, and policies.\r\nGRI 3: Material Topics 2021 provides guidance on how to determine material topics. It also contains disclosures that the organization uses to report information about its process of determining material topics, its list of material topics, and how it manages each topic."@en .
 <https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/2000/01/rdf-schema#label> "GRI Universal Standard"@en .
 <https://www.blinded-for-review/rso#GRIUniversalStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Universal Standard"@en .
 # 
@@ -761,7 +762,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://www.blinded-for-review/rso#Standard
 <https://www.blinded-for-review/rso#Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://www.blinded-for-review/rso#Standard> <http://www.w3.org/2000/01/rdf-schema#comment> "A sustainability reporting standard is a piece of standard that is defined by a specific standard setter. For example, the standard GRI 301: Materials 2016 is part of the GRI Sustainability Reporting Standards (GRI Standards).\nThis class is defined as the super class for subclasses."@en .
+<https://www.blinded-for-review/rso#Standard> <http://www.w3.org/2000/01/rdf-schema#comment> "A sustainability reporting standard is a piece of standard that is defined by a specific standard setter. For example, the standard GRI 301: Materials 2016 is part of the GRI Sustainability Reporting Standards (GRI Standards).\r\nThis class is defined as the super class for subclasses."@en .
 <https://www.blinded-for-review/rso#Standard> <http://www.w3.org/2000/01/rdf-schema#label> "Sustainability Standard"@en .
 <https://www.blinded-for-review/rso#Standard> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sustainability Standard"@en .
 # 
@@ -854,7 +855,7 @@ _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://www.blinded-for-review/rso#enumerated
 <https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.blinded-for-review/rso#Applicability> .
-<https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/2000/01/rdf-schema#comment> "An enumerated requirement is described as \"the organization shall report on the information of A or B of a phenomenon\".\nFor example, \"the reporting organization shall report the following information: total weight or volume of materials that are used to produce .....\", refering to GRI 301-1."@en .
+<https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/2000/01/rdf-schema#comment> "An enumerated requirement is described as \"the organization shall report on the information of A or B of a phenomenon\".\r\nFor example, \"the reporting organization shall report the following information: total weight or volume of materials that are used to produce .....\", refering to GRI 301-1."@en .
 <https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/2000/01/rdf-schema#label> "enumerated"@en .
 <https://www.blinded-for-review/rso#enumerated> <http://www.w3.org/2004/02/skos/core#prefLabel> "enumerated"@en .
 # 

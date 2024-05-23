@@ -501,13 +501,11 @@ These breakdown values are linked to specific report values."""@en ;
 ###  https://www.blinded-for-review/rso#ESRSDisclosureRequirement
 :ESRSDisclosureRequirement rdf:type owl:Class ;
                            rdfs:subClassOf :Disclosure ;
-                           rdfs:isDefinedBy "https://www.efrag.org/Assets/Download?assetUrl=%2Fsites%2Fwebpublishing%2FSiteAssets%2F06%2520Draft%2520ESRS%25201%2520General%2520requirements%2520November%25202022.pdf"^^xsd:anyURI ;
-                           rdfs:label "ESRS Disclosure Requirement"@en ,
-                                      """ESRS structure the information to be disclosed under Disclosure Requirements.
+                           rdfs:comment """ESRS structure the information to be disclosed under Disclosure Requirements.
 Disclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement."""@en ;
-                           <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Disclosure Requirement"@en ,
-                                                                           """ESRS structure the information to be disclosed under Disclosure Requirements.
-Disclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement."""@en .
+                           rdfs:isDefinedBy "https://www.efrag.org/Assets/Download?assetUrl=%2Fsites%2Fwebpublishing%2FSiteAssets%2F06%2520Draft%2520ESRS%25201%2520General%2520requirements%2520November%25202022.pdf"^^xsd:anyURI ;
+                           rdfs:label "ESRS Disclosure Requirement"@en ;
+                           <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Disclosure Requirement"@en .
 
 
 ###  https://www.blinded-for-review/rso#ESRSEnvironmentTopic
@@ -528,8 +526,9 @@ Disclosure Requirements consist of more granular datapoints. The term “datapoi
 
 ###  https://www.blinded-for-review/rso#ESRSIndicator
 :ESRSIndicator rdf:type owl:Class ;
+               rdfs:subClassOf :Indicator ;
                owl:disjointWith :GRIIndicator ;
-               rdfs:comment "ESRS indicator is a specific measurement or metric defined under the European Sustainability Reporting Standards (ESRS)."@en ;
+               rdfs:comment "Indicators derived from the ESRS standards."@en ;
                rdfs:label "ESRS Indicator"@en ;
                <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Indicator"@en .
 
@@ -545,7 +544,7 @@ Disclosure Requirements consist of more granular datapoints. The term “datapoi
 ###  https://www.blinded-for-review/rso#ESRSStandard
 :ESRSStandard rdf:type owl:Class ;
               rdfs:subClassOf :Standard ;
-              rdfs:comment "The European Sustainability Reporting Standards (ESRS) establish a comprehensive framework for sustainability reporting by companies operating within the European Union. These guidelines detail specific reporting requirements, encompassing both broad principles and detailed disclosure obligations."@en ;
+              rdfs:comment "A piece of the sustainability reporting standard derived from the ESRS."@en ;
               rdfs:label "ESRS Standard"@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "ESRS Standard"@en .
 
@@ -657,14 +656,15 @@ credibly."""@en ;
 ###  https://www.blinded-for-review/rso#GRIGovernanceTopic
 :GRIGovernanceTopic rdf:type owl:Class ;
                     rdfs:subClassOf :GRITopic ;
-                    rdfs:comment "GRI topics derived from the GRI standards describing the governance dimension." ;
+                    rdfs:comment "GRI topics derived from the GRI standards describing the governance dimension."@en ;
                     rdfs:label "GRI Governance Topic"@en ;
                     <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Governance Topic"@en .
 
 
 ###  https://www.blinded-for-review/rso#GRIIndicator
 :GRIIndicator rdf:type owl:Class ;
-              rdfs:comment "GRI indicators are part of the Global Reporting Initiative (GRI) Standards, which are widely used for sustainability reporting globally."@en ;
+              rdfs:subClassOf :Indicator ;
+              rdfs:comment "Indicators derived from the GRI standards."@en ;
               rdfs:label "GRI Indicator"@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Indicator"@en .
 
@@ -672,7 +672,7 @@ credibly."""@en ;
 ###  https://www.blinded-for-review/rso#GRISocialTopic
 :GRISocialTopic rdf:type owl:Class ;
                 rdfs:subClassOf :GRITopic ;
-                rdfs:comment "GRI topics derived from the GRI standards describing the social dimension." ;
+                rdfs:comment "GRI topics derived from the GRI standards describing the social dimension."@en ;
                 rdfs:label "GRI Social Topic"@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "GRI Social Topic"@en .
 

@@ -10,7 +10,7 @@
     "version" : "0.1.0",
     "author" : [ "Blinded for review" ],
     "description" : {
-      "en" : "The ontology defines the representation of environmental indicators in sustainability reporting standards GRI and ESRS."
+      "en" : "RSO is designed  for mapping quantitative environmental indicators from the two significant sustainability reporting standards, GRI and ESRS. It formally represents (1) the classification and provenance information of indicators in the GRI and ESRS standards; (2) the requirements for indicators. RSO is envisioned to be integrated into the SME digital infrastructure. Accompanied by suitable digital infrastructure, the reporting system leveraging RSO as a knowledge base will empower the daily tasks of sustainability managers."
     },
     "labels" : {
       "en" : "The Sustainability Reporting Standard Ontology"
@@ -61,16 +61,16 @@
         "value" : "Blinded for review",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1.0",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://www.blinded-for-review/rso#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
         "type" : "label"
       } ],
       "abstract" : [ {
@@ -119,7 +119,7 @@
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "38",
     "type" : "owl:Class"
   }, {
     "id" : "45",
@@ -170,7 +170,7 @@
     "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "69",
+    "id" : "71",
     "type" : "owl:Class"
   }, {
     "id" : "34",
@@ -179,10 +179,10 @@
     "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "71",
+    "id" : "73",
     "type" : "owl:Class"
   }, {
-    "id" : "75",
+    "id" : "76",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "26",
@@ -197,58 +197,58 @@
     "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "68",
+    "id" : "70",
     "type" : "owl:Class"
   }, {
-    "id" : "87",
+    "id" : "89",
     "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "93",
-    "type" : "owl:Class"
-  }, {
-    "id" : "96",
-    "type" : "owl:Class"
-  }, {
-    "id" : "109",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "107",
+    "id" : "95",
     "type" : "owl:Class"
   }, {
     "id" : "98",
     "type" : "owl:Class"
   }, {
-    "id" : "103",
+    "id" : "111",
     "type" : "owl:Class"
   }, {
-    "id" : "116",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "73",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "109",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
+    "id" : "100",
     "type" : "owl:Class"
   }, {
     "id" : "105",
     "type" : "owl:Class"
   }, {
+    "id" : "119",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
     "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
     "type" : "owl:Class"
   }, {
     "id" : "63",
@@ -257,13 +257,13 @@
     "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "79",
+    "id" : "81",
     "type" : "owl:Class"
   }, {
     "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "130",
+    "id" : "132",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "46",
@@ -292,7 +292,7 @@
       "en" : "GRI Governance Topic"
     },
     "comment" : {
-      "undefined" : "GRI topics derived from the GRI standards describing the governance dimension."
+      "en" : "GRI topics derived from the GRI standards describing the governance dimension."
     },
     "id" : "3",
     "superClasses" : [ "4" ]
@@ -436,7 +436,7 @@
     "comment" : {
       "en" : "Absolute indicator represents the total quantity of a phenomenon."
     },
-    "id" : "37",
+    "id" : "38",
     "superClasses" : [ "32" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#CoreEnvironmentTopic",
@@ -542,14 +542,14 @@
     },
     "subClasses" : [ "5", "20" ],
     "comment" : {
-      "en" : "The European Sustainability Reporting Standards (ESRS) establish a comprehensive framework for sustainability reporting by companies operating within the European Union. These guidelines detail specific reporting requirements, encompassing both broad principles and detailed disclosure obligations."
+      "en" : "A piece of the sustainability reporting standard derived from the ESRS."
     },
     "id" : "6",
     "superClasses" : [ "53" ]
   }, {
     "instances" : 0,
     "union" : [ "32", "24" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "54"
   }, {
     "iri" : "https://www.blinded-for-review/rso#WasteIndicator",
@@ -576,7 +576,7 @@
   }, {
     "instances" : 0,
     "union" : [ "32", "7" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "56"
   }, {
     "iri" : "https://www.blinded-for-review/rso#ESGDimension",
@@ -624,7 +624,7 @@
         } ]
       },
       "comment" : {
-        "en" : "The main issues reported under the Governance Pillar are shareholders rights, board diversity, how executives are compensated and how their compensation is aligned with the companyÂ’s sustainability performance. It also includes matters of corporate behaviour such as anti-competitive practices and corruption."
+        "en" : "The main issues reported under the Governance Pillar are shareholders rights, board diversity, how executives are compensated and how their compensation is aligned with the company’s sustainability performance. It also includes matters of corporate behaviour such as anti-competitive practices and corruption."
       },
       "labels" : {
         "IRI-based" : "Governance",
@@ -676,19 +676,19 @@
       "en" : "GRI Disclosure"
     },
     "comment" : {
-      "en" : "The GRI Standards contain disclosures that allow an organization to report information about its impacts consistently and\ncredibly."
+      "en" : "The GRI Standards contain disclosures that allow an organization to report information about its impacts consistently and\r\ncredibly."
     },
     "id" : "13",
     "superClasses" : [ "11" ]
   }, {
     "instances" : 0,
     "union" : [ "32", "47", "11" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "58"
   }, {
     "instances" : 0,
     "union" : [ "32", "47", "11" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "59"
   }, {
     "iri" : "https://www.blinded-for-review/rso#EnergyIndicator",
@@ -729,7 +729,7 @@
       "en" : "GRI Social Topic"
     },
     "comment" : {
-      "undefined" : "GRI topics derived from the GRI standards describing the social dimension."
+      "en" : "GRI topics derived from the GRI standards describing the social dimension."
     },
     "id" : "30",
     "superClasses" : [ "4" ]
@@ -752,7 +752,7 @@
     "comment" : {
       "en" : "Models a series of sustainability reporting standards."
     },
-    "id" : "69"
+    "id" : "71"
   }, {
     "iri" : "https://www.blinded-for-review/rso#GRIEnvironmentTopic",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -814,7 +814,7 @@
     "comment" : {
       "en" : "Individuals of CoreGovernanceTopic are based on the GRI standards and represent unique governance concerns. These topics facilitate the categorization of governance-related indicators, promoting transparency and accountability in corporate governance practices."
     },
-    "id" : "71",
+    "id" : "73",
     "superClasses" : [ "46" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#EnvironmentalIndicator",
@@ -837,7 +837,7 @@
       "en" : "Indicators that measure the environmen dimension of sustainability."
     },
     "attributes" : [ "intersection" ],
-    "id" : "75"
+    "id" : "76"
   }, {
     "iri" : "https://www.blinded-for-review/rso#BreakDownValue",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -855,7 +855,7 @@
       "en" : "Break Down Value"
     },
     "comment" : {
-      "en" : "Breakdown values are crafted to meet the standards' requirements, allowing organizations to dissect a total report value based on specific criteria. \nThese breakdown values are linked to specific report values."
+      "en" : "Breakdown values are crafted to meet the standards' requirements, allowing organizations to dissect a total report value based on specific criteria. \r\nThese breakdown values are linked to specific report values."
     },
     "id" : "26",
     "superClasses" : [ "24" ]
@@ -876,9 +876,10 @@
       "en" : "GRI Indicator"
     },
     "comment" : {
-      "en" : "GRI indicators are part of the Global Reporting Initiative (GRI) Standards, which are widely used for sustainability reporting globally."
+      "en" : "Indicators derived from the GRI standards."
     },
-    "id" : "83"
+    "id" : "83",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#Disclosure",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -926,9 +927,10 @@
       "en" : "ESRS Indicator"
     },
     "comment" : {
-      "en" : "ESRS indicator is a specific measurement or metric defined under the European Sustainability Reporting Standards (ESRS)."
+      "en" : "Indicators derived from the ESRS standards."
     },
-    "id" : "68"
+    "id" : "70",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#PercentageIndicator",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -948,8 +950,8 @@
     "comment" : {
       "en" : "A percentage indicator shares the same quantity kind on both numerator and denominator."
     },
-    "id" : "87",
-    "superClasses" : [ "79" ]
+    "id" : "89",
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#GRIStandard",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -991,7 +993,7 @@
     "comment" : {
       "en" : "A variable that quantifies waste metrics."
     },
-    "id" : "93",
+    "id" : "95",
     "superClasses" : [ "15" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#EnergyVariable",
@@ -1012,7 +1014,7 @@
     "comment" : {
       "en" : "A variable that quantifies energy metrics."
     },
-    "id" : "96",
+    "id" : "98",
     "superClasses" : [ "15" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#Applicability",
@@ -1042,7 +1044,7 @@
         } ]
       },
       "comment" : {
-        "en" : "An enumerated requirement is described as \"the organization shall report on the information of A or B of a phenomenon\".\nFor example, \"the reporting organization shall report the following information: total weight or volume of materials that are used to produce .....\", refering to GRI 301-1."
+        "en" : "An enumerated requirement is described as \"the organization shall report on the information of A or B of a phenomenon\".\r\nFor example, \"the reporting organization shall report the following information: total weight or volume of materials that are used to produce .....\", refering to GRI 301-1."
       },
       "labels" : {
         "IRI-based" : "enumerated",
@@ -1088,7 +1090,7 @@
     "comment" : {
       "en" : "Indicates whether an indicator is required mandatorily or optionally by the corresponding standard."
     },
-    "id" : "109"
+    "id" : "111"
   }, {
     "iri" : "https://www.blinded-for-review/rso#GRITopicStandard",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1118,7 +1120,7 @@
       "IRI-based" : "Organization"
     },
     "attributes" : [ "external" ],
-    "id" : "107"
+    "id" : "109"
   }, {
     "iri" : "https://www.blinded-for-review/rso#Emission",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1138,7 +1140,7 @@
     "comment" : {
       "en" : "A variable that quantifies emissions."
     },
-    "id" : "98",
+    "id" : "100",
     "superClasses" : [ "15" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#ESRSSocialTopic",
@@ -1159,7 +1161,7 @@
     "comment" : {
       "undefined" : "ESRS topics derived from the ESRS standards describing the social dimension."
     },
-    "id" : "103",
+    "id" : "105",
     "superClasses" : [ "36" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#EmissionIndicator",
@@ -1182,7 +1184,7 @@
       "en" : "Indicators measure the emission topic."
     },
     "attributes" : [ "intersection" ],
-    "id" : "116"
+    "id" : "119"
   }, {
     "iri" : "https://www.blinded-for-review/rso#CoreSocialTopic",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1202,7 +1204,7 @@
     "comment" : {
       "en" : "Individuals of CoreSocialTopic are sourced from the GRI standards and encompass specific social issues. This categorization helps in the systematic reporting and evaluation of social topics, focusing on areas such as labor practices, human rights, and community engagement."
     },
-    "id" : "73",
+    "id" : "78",
     "superClasses" : [ "46" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#ESRSTopic",
@@ -1220,33 +1222,12 @@
       "IRI-based" : "ESRSTopic",
       "en" : "ESRS Topic"
     },
-    "subClasses" : [ "35", "105", "103" ],
+    "subClasses" : [ "35", "107", "105" ],
     "comment" : {
       "en" : "ESRS topics derived from the ESRS standards."
     },
     "id" : "36",
     "superClasses" : [ "47" ]
-  }, {
-    "iri" : "https://www.blinded-for-review/rso#ESRSUniversalStandard",
-    "baseIri" : "https://www.blinded-for-review/rso",
-    "instances" : 0,
-    "annotations" : {
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "ESRS Universal Standard",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ESRSUniversalStandard",
-      "en" : "ESRS Universal Standard"
-    },
-    "comment" : {
-      "en" : "ESRS universal standards provide general reporting concepts and overarching disclosure requirements that apply across all undertakings, regardless of the sector they operate in."
-    },
-    "id" : "20",
-    "superClasses" : [ "6" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#ReportValue",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1269,6 +1250,27 @@
     "id" : "23",
     "superClasses" : [ "24" ]
   }, {
+    "iri" : "https://www.blinded-for-review/rso#ESRSUniversalStandard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Universal Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSUniversalStandard",
+      "en" : "ESRS Universal Standard"
+    },
+    "comment" : {
+      "en" : "ESRS universal standards provide general reporting concepts and overarching disclosure requirements that apply across all undertakings, regardless of the sector they operate in."
+    },
+    "id" : "20",
+    "superClasses" : [ "6" ]
+  }, {
     "iri" : "https://www.blinded-for-review/rso#Variable",
     "baseIri" : "https://www.blinded-for-review/rso",
     "instances" : 0,
@@ -1284,11 +1286,32 @@
       "IRI-based" : "Variable",
       "en" : "Sustainability Variable"
     },
-    "subClasses" : [ "96", "93", "14", "98" ],
+    "subClasses" : [ "98", "95", "14", "100" ],
     "comment" : {
       "en" : "A variable encompasses a hierarchy of subtopics within specific sustainability areas. It represents a measurable value of a phenomenon, like 'total energy consumption'."
     },
     "id" : "15"
+  }, {
+    "iri" : "https://www.blinded-for-review/rso#Standard",
+    "baseIri" : "https://www.blinded-for-review/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Standard",
+      "en" : "Sustainability Standard"
+    },
+    "subClasses" : [ "2", "6" ],
+    "comment" : {
+      "en" : "A sustainability reporting standard is a piece of standard that is defined by a specific standard setter. For example, the standard GRI 301: Materials 2016 is part of the GRI Sustainability Reporting Standards (GRI Standards).\r\nThis class is defined as the super class for subclasses."
+    },
+    "id" : "53"
   }, {
     "iri" : "https://www.blinded-for-review/rso#ESRSGovernanceTopic",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1308,29 +1331,8 @@
     "comment" : {
       "undefined" : "ESRS topics derived from the ESRS standards describing the governance dimension."
     },
-    "id" : "105",
+    "id" : "107",
     "superClasses" : [ "36" ]
-  }, {
-    "iri" : "https://www.blinded-for-review/rso#Standard",
-    "baseIri" : "https://www.blinded-for-review/rso",
-    "instances" : 0,
-    "annotations" : {
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Sustainability Standard",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Standard",
-      "en" : "Sustainability Standard"
-    },
-    "subClasses" : [ "2", "6" ],
-    "comment" : {
-      "en" : "A sustainability reporting standard is a piece of standard that is defined by a specific standard setter. For example, the standard GRI 301: Materials 2016 is part of the GRI Sustainability Reporting Standards (GRI Standards).\nThis class is defined as the super class for subclasses."
-    },
-    "id" : "53"
   }, {
     "iri" : "https://www.blinded-for-review/rso#GRIUniversalStandard",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1348,7 +1350,7 @@
       "en" : "GRI Universal Standard"
     },
     "comment" : {
-      "en" : "The Universal Standards defined in GRI standards are: GRI 1, GRI 2 and GRI 3\nGRI 1: Foundation 2021 specifies the requirements that the organization must comply with to report in accordance with the GRI Standards. The organization begins using the GRI Standards by consulting GRI 1.\nGRI 2: General Disclosures 2021 contains disclosures that the organization uses to provide information about its reporting practices and other organizational details, such as its activities, governance, and policies.\nGRI 3: Material Topics 2021 provides guidance on how to determine material topics. It also contains disclosures that the organization uses to report information about its process of determining material topics, its list of material topics, and how it manages each topic."
+      "en" : "The Universal Standards defined in GRI standards are: GRI 1, GRI 2 and GRI 3\r\nGRI 1: Foundation 2021 specifies the requirements that the organization must comply with to report in accordance with the GRI Standards. The organization begins using the GRI Standards by consulting GRI 1.\r\nGRI 2: General Disclosures 2021 contains disclosures that the organization uses to provide information about its reporting practices and other organizational details, such as its activities, governance, and policies.\r\nGRI 3: Material Topics 2021 provides guidance on how to determine material topics. It also contains disclosures that the organization uses to report information about its process of determining material topics, its list of material topics, and how it manages each topic."
     },
     "id" : "63",
     "superClasses" : [ "2" ]
@@ -1368,16 +1370,14 @@
         "language" : "en",
         "value" : "ESRS Disclosure Requirement",
         "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "ESRS structure the information to be disclosed under Disclosure Requirements.\nDisclosure Requirements consist of more granular datapoints. The term Â“datapointÂ” in this context also refers to a narrative sub-element of a Disclosure Requirement.",
-        "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "ESRSDisclosureRequirement",
       "en" : "ESRS Disclosure Requirement"
+    },
+    "comment" : {
+      "en" : "ESRS structure the information to be disclosed under Disclosure Requirements.\r\nDisclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement."
     },
     "id" : "10",
     "superClasses" : [ "11" ]
@@ -1397,11 +1397,11 @@
       "IRI-based" : "WeightedIndicator",
       "en" : "Weighted Indicator"
     },
-    "subClasses" : [ "87", "40" ],
+    "subClasses" : [ "89", "40" ],
     "comment" : {
       "en" : "Weighted indicator considers additional factors through weighting."
     },
-    "id" : "79",
+    "id" : "81",
     "superClasses" : [ "32" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#Indicator",
@@ -1419,7 +1419,7 @@
       "IRI-based" : "Indicator",
       "en" : "Sustainability Indicator"
     },
-    "subClasses" : [ "37", "79" ],
+    "subClasses" : [ "38", "81", "83", "70" ],
     "comment" : {
       "en" : "A single measure from which conclusions on the phenomenon of interest can be inferred."
     },
@@ -1445,7 +1445,7 @@
       "en" : "Indicators measure the corporate governance dimension of sustainability."
     },
     "attributes" : [ "intersection" ],
-    "id" : "130"
+    "id" : "132"
   }, {
     "iri" : "https://www.blinded-for-review/rso#CoreTopic",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1462,7 +1462,7 @@
       "IRI-based" : "CoreTopic",
       "en" : "Core Topic"
     },
-    "subClasses" : [ "45", "73", "71" ],
+    "subClasses" : [ "45", "78", "73" ],
     "comment" : {
       "en" : "Individuals of CoreTopic are borrowed from the GRI standards which represents a singular environmental issue, facilitating indicator classification."
     },
@@ -1488,7 +1488,7 @@
       "undefined" : "An intensity indicator has different quantity kinds and units on numerator and denominator."
     },
     "id" : "40",
-    "superClasses" : [ "79" ]
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "https://www.blinded-for-review/rso#Topic",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1545,7 +1545,7 @@
     "id" : "33",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "38",
+    "id" : "37",
     "type" : "owl:objectProperty"
   }, {
     "id" : "39",
@@ -1576,10 +1576,13 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "67",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "70",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "72",
     "type" : "rdfs:SubClassOf"
@@ -1587,58 +1590,55 @@
     "id" : "74",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "76",
+    "id" : "75",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "77",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "78",
+    "id" : "79",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "80",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "81",
+    "id" : "82",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "82",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
     "type" : "owl:objectProperty"
   }, {
     "id" : "86",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "52",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "90",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "91",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "92",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "94",
-    "type" : "owl:objectProperty"
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "95",
+    "id" : "94",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "97",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "99",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "100",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "101",
@@ -1647,38 +1647,38 @@
     "id" : "102",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "104",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "106",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "108",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "110",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "113",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "85",
+    "id" : "112",
     "type" : "owl:objectProperty"
   }, {
     "id" : "115",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "18",
+    "id" : "87",
     "type" : "owl:objectProperty"
   }, {
     "id" : "117",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "118",
-    "type" : "owl:disjointWith"
+    "id" : "18",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "119",
-    "type" : "owl:disjointWith"
+    "id" : "118",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "120",
     "type" : "owl:disjointWith"
@@ -1686,62 +1686,68 @@
     "id" : "121",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "42",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "122",
     "type" : "owl:disjointWith"
   }, {
     "id" : "123",
     "type" : "owl:disjointWith"
   }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "124",
     "type" : "owl:disjointWith"
   }, {
     "id" : "125",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "126",
     "type" : "owl:disjointWith"
   }, {
     "id" : "127",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "128",
     "type" : "owl:disjointWith"
   }, {
     "id" : "129",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "111",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "112",
-    "type" : "owl:objectProperty"
+    "id" : "130",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "131",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "89",
+    "id" : "113",
     "type" : "owl:objectProperty"
   }, {
     "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "0"
   }, {
     "range" : "11",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "9"
   }, {
     "range" : "11",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -1757,37 +1763,37 @@
   }, {
     "range" : "6",
     "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "19"
   }, {
     "range" : "6",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
     "range" : "24",
     "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "22"
   }, {
     "range" : "24",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "25"
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
     "range" : "4",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
     "range" : "4",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
     "iri" : "https://www.blinded-for-review/rso#reportsOnIndicator",
@@ -1810,7 +1816,7 @@
       "en" : "This property associates a reported value with the particular indicator derived from the standards, which the value represents."
     },
     "attributes" : [ "object" ],
-    "id" : "38"
+    "id" : "37"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasDenominatorQuantityKind",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1926,23 +1932,33 @@
   }, {
     "range" : "30",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
     "range" : "63",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "62"
   }, {
     "range" : "30",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "64"
   }, {
     "range" : "47",
-    "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "47",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
   }, {
     "iri" : "https://www.blinded-for-review/rso#measuresESRSTopic",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -1960,52 +1976,52 @@
       "en" : "measures ESRS Topic"
     },
     "superproperty" : [ "52" ],
-    "domain" : "68",
+    "domain" : "70",
     "comment" : {
       "en" : "This property relates the indicator with certain ESRS Topic that the indicator measures."
     },
     "attributes" : [ "object" ],
-    "id" : "67"
-  }, {
-    "range" : "46",
-    "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "70"
-  }, {
-    "range" : "46",
-    "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "72"
-  }, {
-    "range" : "47",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "74"
-  }, {
-    "range" : "47",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "76"
-  }, {
-    "range" : "32",
-    "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "77"
-  }, {
-    "range" : "79",
-    "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "78"
+    "id" : "69"
   }, {
     "range" : "46",
     "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "32",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "46",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "46",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "32",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "81",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "80"
   }, {
     "range" : "32",
-    "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "81"
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "32",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
   }, {
     "iri" : "https://www.blinded-for-review/rso#inDisclosure",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2027,7 +2043,7 @@
       "en" : "This property relates a GRI indicator with the corresponding disclosure that defines this indicator in the GRI standards."
     },
     "attributes" : [ "object" ],
-    "id" : "82"
+    "id" : "85"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasDenominatorVariable",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2044,23 +2060,23 @@
       "IRI-based" : "hasDenominatorVariable",
       "en" : "has Denominator Variable"
     },
-    "superproperty" : [ "85" ],
-    "domain" : "79",
+    "superproperty" : [ "87" ],
+    "domain" : "81",
     "comment" : {
       "en" : "This property relates the weighted indicator with the measurement variable (object) of the denominator derived from the sustainability standards."
     },
     "attributes" : [ "object" ],
-    "id" : "84"
-  }, {
-    "range" : "79",
-    "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "86"
+  }, {
+    "range" : "81",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
   }, {
     "range" : "53",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "88"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
   }, {
     "iri" : "https://www.blinded-for-review/rso#measuresTopic",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2078,7 +2094,7 @@
       "en" : "measures sustainability topic"
     },
     "domain" : "32",
-    "subproperty" : [ "51", "67", "89" ],
+    "subproperty" : [ "51", "69", "91" ],
     "comment" : {
       "en" : "This property relates the indicator with specific sustainability topic that the indicator measures."
     },
@@ -2087,8 +2103,8 @@
   }, {
     "range" : "53",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "90"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
@@ -2097,13 +2113,13 @@
       "IRI-based" : "topDataProperty"
     },
     "domain" : "17",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "91"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "93"
   }, {
     "range" : "15",
-    "domain" : "93",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "92"
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasReportValue",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2125,42 +2141,42 @@
       "en" : "This property links the sustainability report with the report value."
     },
     "attributes" : [ "object" ],
-    "id" : "94"
-  }, {
-    "range" : "15",
-    "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "95"
+    "id" : "96"
   }, {
     "range" : "15",
     "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "97"
   }, {
     "range" : "15",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "99"
   }, {
-    "range" : "36",
-    "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "100"
-  }, {
-    "range" : "2",
-    "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "101"
   }, {
     "range" : "36",
-    "domain" : "103",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "102"
+  }, {
+    "range" : "2",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
   }, {
     "range" : "36",
     "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "104"
+  }, {
+    "range" : "36",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
   }, {
     "iri" : "https://www.blinded-for-review/rso#publish",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2177,12 +2193,12 @@
       "IRI-based" : "publish",
       "en" : "publish"
     },
-    "domain" : "107",
+    "domain" : "109",
     "comment" : {
       "en" : "This property links an organization to the sustainability reports published by it."
     },
     "attributes" : [ "object" ],
-    "id" : "106"
+    "id" : "108"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasNumericalValue",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2204,7 +2220,7 @@
       "en" : "This property relates the indicator value with its specific numerical value."
     },
     "attributes" : [ "datatype" ],
-    "id" : "108"
+    "id" : "110"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasCalculationVariable",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2221,17 +2237,17 @@
       "IRI-based" : "hasCalculationVariable",
       "en" : "has Calculation Variable"
     },
-    "domain" : "37",
-    "subproperty" : [ "111", "112" ],
+    "domain" : "38",
+    "subproperty" : [ "113", "114" ],
     "comment" : {
       "en" : "This property relates the indicator to the required variables for calculating its value, as defined by mathematical functions in the sustainability standards."
     },
     "attributes" : [ "object" ],
-    "id" : "110"
+    "id" : "112"
   }, {
     "iri" : "https://www.blinded-for-review/rso#isDefinedBy",
     "baseIri" : "https://www.blinded-for-review/rso",
-    "range" : "69",
+    "range" : "71",
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
@@ -2249,7 +2265,7 @@
       "en" : "This property relates an indicator or a piece of standard with the specific standard set (either GRI or ESRS) that defines it."
     },
     "attributes" : [ "object" ],
-    "id" : "113"
+    "id" : "115"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasMeasurementVariable",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2267,12 +2283,12 @@
       "en" : "has Measurement Variable"
     },
     "domain" : "32",
-    "subproperty" : [ "84", "114" ],
+    "subproperty" : [ "86", "116" ],
     "comment" : {
       "en" : "This property relates the indicator with the measurement variable (object) derived from the sustainability standards."
     },
     "attributes" : [ "object" ],
-    "id" : "85"
+    "id" : "87"
   }, {
     "iri" : "https://www.blinded-for-review/rso#measuresDimension",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2294,7 +2310,7 @@
       "en" : "This property relates the indicator with the ESG dimension (either Environmental, Social, or corporate Goverment) that the indicator measures."
     },
     "attributes" : [ "object" ],
-    "id" : "115"
+    "id" : "117"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasSiblingIndicator",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2316,7 +2332,7 @@
     "comment" : {
       "en" : "This property relates the indicators defined by the same standard setter with the same measurement variable but different quantity kind. This property is defined as a symmetric property."
     },
-    "attributes" : [ "object", "symmetric" ],
+    "attributes" : [ "symmetric", "object" ],
     "id" : "18"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasNumeratorQuantityKind",
@@ -2340,27 +2356,27 @@
       "en" : "This property relates the intensity indicator with the required quantity kind of the numerator derived from the sustainability standards."
     },
     "attributes" : [ "object" ],
-    "id" : "117"
-  }, {
-    "range" : "73",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "118"
   }, {
-    "range" : "73",
-    "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "119"
+    "range" : "78",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "78",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "107",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
   }, {
     "range" : "105",
     "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "120"
-  }, {
-    "range" : "103",
-    "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "121"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasQuantityKind",
     "baseIri" : "http://qudt.org/schema/qudt",
@@ -2378,27 +2394,27 @@
       "en" : "has Quantity Kind"
     },
     "domain" : "56",
-    "subproperty" : [ "39", "117" ],
+    "subproperty" : [ "39", "118" ],
     "comment" : {
       "en" : "This property relates the indicator with the required quantity kind derived from the sustainability standards."
     },
     "attributes" : [ "external", "object" ],
     "id" : "42"
   }, {
-    "range" : "103",
-    "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "122"
+    "range" : "105",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
   }, {
     "range" : "83",
-    "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "123"
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
   }, {
     "range" : "20",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "124"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
   }, {
     "iri" : "https://www.blinded-for-review/rso#inDisclosureRequirement",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2415,27 +2431,27 @@
       "IRI-based" : "inDisclosureRequirement",
       "en" : "in ESRS disclosure requirement"
     },
-    "domain" : "68",
+    "domain" : "70",
     "comment" : {
-      "en" : "User\nThis property relates an ESRS indicator with the corresponding ESRS Disclosure Requirement from where this indicator was derived."
+      "en" : "User\r\nThis property relates an ESRS indicator with the corresponding ESRS Disclosure Requirement from where this indicator was derived."
     },
     "attributes" : [ "object" ],
-    "id" : "125"
+    "id" : "127"
   }, {
     "range" : "3",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "126"
-  }, {
-    "range" : "79",
-    "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "127"
-  }, {
-    "range" : "71",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "128"
+  }, {
+    "range" : "81",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "73",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
   }, {
     "iri" : "https://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "https://qudt.org/schema/qudt",
@@ -2457,7 +2473,7 @@
       "en" : "This property relates the indicator with the required unit derived from the sustainability standards."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "129"
+    "id" : "131"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasPositiveVariable",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2474,13 +2490,13 @@
       "IRI-based" : "hasPositiveVariable",
       "en" : "has Positive Variable"
     },
-    "superproperty" : [ "110" ],
-    "domain" : "37",
+    "superproperty" : [ "112" ],
+    "domain" : "38",
     "comment" : {
       "en" : "This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is plus."
     },
     "attributes" : [ "object" ],
-    "id" : "111"
+    "id" : "113"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasNegativeVariable",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2497,17 +2513,17 @@
       "IRI-based" : "hasNegativeVariable",
       "en" : "has Negative Variable"
     },
-    "superproperty" : [ "110" ],
-    "domain" : "37",
+    "superproperty" : [ "112" ],
+    "domain" : "38",
     "comment" : {
       "en" : "This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is minus."
     },
     "attributes" : [ "object" ],
-    "id" : "112"
+    "id" : "114"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasApplicability",
     "baseIri" : "https://www.blinded-for-review/rso",
-    "range" : "109",
+    "range" : "111",
     "annotations" : {
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -2525,7 +2541,7 @@
       "en" : "This property relates the indicator with the indicator applicability derived from the sustainability standards (either mandatory, optional, or enumerated)."
     },
     "attributes" : [ "object" ],
-    "id" : "131"
+    "id" : "133"
   }, {
     "iri" : "https://www.blinded-for-review/rso#measuresGRITopic",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2548,7 +2564,7 @@
       "en" : "This property relates the indicator with certain GRI Topic that the indicator measures."
     },
     "attributes" : [ "object" ],
-    "id" : "89"
+    "id" : "91"
   }, {
     "iri" : "https://www.blinded-for-review/rso#hasNumeratorVariable",
     "baseIri" : "https://www.blinded-for-review/rso",
@@ -2565,12 +2581,12 @@
       "IRI-based" : "hasNumeratorVariable",
       "en" : "has Numerator Variable"
     },
-    "superproperty" : [ "85" ],
-    "domain" : "79",
+    "superproperty" : [ "87" ],
+    "domain" : "81",
     "comment" : {
       "en" : "This property relates the weighted indicator with the measurement variable (object) of the numerator derived from the sustainability standards."
     },
     "attributes" : [ "object" ],
-    "id" : "114"
+    "id" : "116"
   } ]
 }

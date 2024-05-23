@@ -332,6 +332,9 @@ This section provides details for each class and property defined by The Sustain
  <div class="entity" id="ESRSDisclosureRequirement">
   <h3>ESRS Disclosure Requirement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://www.blinded-for-review/rso#ESRSDisclosureRequirement</p>
+  <div class="comment">
+   <span class="markdown">ESRS structure the information to be disclosed under Disclosure Requirements. Disclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -401,9 +404,15 @@ This section provides details for each class and property defined by The Sustain
   <h3>ESRS Indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://www.blinded-for-review/rso#ESRSIndicator</p>
   <div class="comment">
-   <span class="markdown">ESRS indicator is a specific measurement or metric defined under the European Sustainability Reporting Standards (ESRS).</span>
+   <span class="markdown">Indicators derived from the ESRS standards.</span>
   </div>
   <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Indicator" title="https://www.blinded-for-review/rso#Indicator">Sustainability Indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
    <dt>
     is in domain of
    </dt>
@@ -443,7 +452,7 @@ This section provides details for each class and property defined by The Sustain
   <h3>ESRS Standard<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://www.blinded-for-review/rso#ESRSStandard</p>
   <div class="comment">
-   <span class="markdown">The European Sustainability Reporting Standards (ESRS) establish a comprehensive framework for sustainability reporting by companies operating within the European Union. These guidelines detail specific reporting requirements, encompassing both broad principles and detailed disclosure obligations.</span>
+   <span class="markdown">A piece of the sustainability reporting standard derived from the ESRS.</span>
   </div>
   <dl class="description">
    <dt>
@@ -604,9 +613,15 @@ This section provides details for each class and property defined by The Sustain
   <h3>GRI Indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://www.blinded-for-review/rso#GRIIndicator</p>
   <div class="comment">
-   <span class="markdown">GRI indicators are part of the Global Reporting Initiative (GRI) Standards, which are widely used for sustainability reporting globally.</span>
+   <span class="markdown">Indicators derived from the GRI standards.</span>
   </div>
   <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Indicator" title="https://www.blinded-for-review/rso#Indicator">Sustainability Indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
    <dt>
     is in domain of
    </dt>
@@ -893,7 +908,7 @@ This section provides details for each class and property defined by The Sustain
     has sub-classes
    </dt>
    <dd>
-    <a href="#AbsoluteIndicator" title="https://www.blinded-for-review/rso#AbsoluteIndicator">Absolute Indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#WeightedIndicator" title="https://www.blinded-for-review/rso#WeightedIndicator">Weighted Indicator</a> <sup class="type-c" title="class">c</sup>
+    <a href="#AbsoluteIndicator" title="https://www.blinded-for-review/rso#AbsoluteIndicator">Absolute Indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#ESRSIndicator" title="https://www.blinded-for-review/rso#ESRSIndicator">ESRS Indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#GRIIndicator" title="https://www.blinded-for-review/rso#GRIIndicator">GRI Indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#WeightedIndicator" title="https://www.blinded-for-review/rso#WeightedIndicator">Weighted Indicator</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
